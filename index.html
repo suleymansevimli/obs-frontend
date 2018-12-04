@@ -1,184 +1,560 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta charset="utf-8">
-<link rel="stylesheet" href="css/main.css">
-<link rel="stylesheet" href="css/counter.css">
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-<title>Hoşgeldiniz.</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/counter.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <title>Hoşgeldiniz.</title>
 </head>
 <body>
 
 <div id="mySidenav" class="sidenav">
-  <a href="javascript:void(0)"  class="closebtn" onclick="closeNav()">&times;</a>
-  <div class="col-md-12 profil-info">
-    <div class="row">
-      <div class="col-md-4">
-        <img src="img/veli.png" class="circle-image" width="70" height="70" alt="">
-      </div>
-      <div class="col-md-8">
-        <span class="user-name"> Süleyman Sevimli </span>
-        <span class="unvan"> Öğrenci </span>
-      </div>
-      </div>
-      <div class="col-md-7" style="float:right;margin-right:5%;">
-        <i class="fa fa-home sideNavIcon"></i>
-        <i class="fa fa-user sideNavIcon"></i>
-        <i class="fa fa-comment sideNavIcon"></i>
-        <i class="fa fa-external-link-alt sideNavIcon"></i>
-    </div>
-  </div>
-<div class="col-md-12 menu-items">
-  <!-- Menu Item -->
-    <span class="list" onclick="$('#personal').toggle('medium');"> <i class="fa fa-user"></i> &nbsp;Kişisel Bilgiler </span>
-      <div id="personal" style="display:none;">
-        <a href="#">Kart Bilgileri</a>
-        <a href="#">Özlük Bilgileri</a>
-        <a href="#">Kütüphane</a>
-        <a href="#">Şifre Değiştirme</a>
-        <a href="#">ATA KİMLİK</a>
-        <a href="#">SSL - VPN</a>
-      </div>
-    <!-- #Menu Item -->
-
-    <!-- Menu Item -->
-      <span class="list" onclick="$('#basvuru-islemleri').toggle('medium');" ><i class="fa fa-briefcase"></i> &nbsp;Başvuru İşlemleri </span>
-        <div id="basvuru-islemleri" style="display:none;">
-          <a href="#">Değişim Programları Başvuru</a>
-          <a href="#">Kayıt Başvuruları</a>
+    <a href="javascript:void(0)"  class="closebtn" onclick="closeNav()">&times;</a>
+    <div class="col-md-12 profil-info">
+        <div class="row">
+            <div class="col-md-4">
+                <img src="img/veli.png" class="circle-image" width="70" height="70" alt="">
+            </div>
+            <div class="col-md-8">
+                <span class="user-name"> Süleyman Sevimli </span>
+                <span class="unvan"> Öğrenci </span>
+            </div>
         </div>
-  <!-- #Menu Item -->
-
-  <!-- Menu Item -->
-  <span class="list" onclick="$('#ogrenim').toggle('medium');" ><i class="fa fa-school"></i> &nbsp;Öğrenim </span>
-    <div id="ogrenim" style="display:none;">
-      <a href="#">Agno Hesapla</a>
-      <a href="#">Burs Başvurusu</a>
-      <a href="#">Ders Alma</a>
-      <a href="#">Ders Alma Listesi</a>
-      <a href="#">Ders Bilgi Sistemi</a>
-      <a href="#">Ders Programı</a>
-      <a href="#">Not Kartı</a>
-      <a href="#">Sınav Yer Bilgisi</a>
-      <a href="#">Sınav Sonuçları</a>
-      <a href="#">Yoklama Bilgisi</a>
+        <div class="col-md-7" style="float:right;margin-right:5%;">
+            <i class="fa fa-home sideNavIcon"></i>
+            <i class="fa fa-user sideNavIcon"></i>
+            <i class="fa fa-comment sideNavIcon"></i>
+            <i class="fa fa-external-link-alt sideNavIcon"></i>
+        </div>
     </div>
-<!-- #Menu Item -->
+    <div class="col-md-12 menu-items">
+        <!-- Menu Item -->
+        <span class="list" onclick="$('#personal').toggle('medium');"> <i class="fa fa-user"></i> &nbsp;Kişisel Bilgiler </span>
+        <div id="personal" style="display:none;">
+            <a href="#">Kart Bilgileri</a>
+            <a href="#">Özlük Bilgileri</a>
+            <a href="#">Kütüphane</a>
+            <a href="#">Şifre Değiştirme</a>
+            <a href="#">ATA KİMLİK</a>
+            <a href="#">SSL - VPN</a>
+        </div>
+        <!-- #Menu Item -->
 
-<!-- Menu Item -->
-  <span class="list" onclick="$('#mesaj').toggle('medium');" ><i class="fa fa-comment"></i> &nbsp;Mesajlaşma </span>
-    <div id="mesaj" style="display:none;">
-      <a href="#">Mesajlar</a>
-      <a href="#">Mesaj Gonder</a>
+        <!-- Menu Item -->
+        <span class="list" onclick="$('#basvuru-islemleri').toggle('medium');" ><i class="fa fa-briefcase"></i> &nbsp;Başvuru İşlemleri </span>
+        <div id="basvuru-islemleri" style="display:none;">
+            <a href="#">Değişim Programları Başvuru</a>
+            <a href="#">Kayıt Başvuruları</a>
+        </div>
+        <!-- #Menu Item -->
+
+        <!-- Menu Item -->
+        <span class="list" onclick="$('#ogrenim').toggle('medium');" ><i class="fa fa-school"></i> &nbsp;Öğrenim </span>
+        <div id="ogrenim" style="display:none;">
+            <a href="#">Agno Hesapla</a>
+            <a href="#">Burs Başvurusu</a>
+            <a href="#">Ders Alma</a>
+            <a href="#">Ders Alma Listesi</a>
+            <a href="#">Ders Bilgi Sistemi</a>
+            <a href="#">Ders Programı</a>
+            <a href="#">Not Kartı</a>
+            <a href="#">Sınav Yer Bilgisi</a>
+            <a href="#">Sınav Sonuçları</a>
+            <a href="#">Yoklama Bilgisi</a>
+        </div>
+        <!-- #Menu Item -->
+
+        <!-- Menu Item -->
+        <span class="list" onclick="$('#mesaj').toggle('medium');" ><i class="fa fa-comment"></i> &nbsp;Mesajlaşma </span>
+        <div id="mesaj" style="display:none;">
+            <a href="#">Mesajlar</a>
+            <a href="#">Mesaj Gonder</a>
+        </div>
+        <!-- #Menu Item -->
+
+        <!-- Menu Item -->
+        <span class="list" onclick="$('#belge').toggle('medium');" ><i class="fa fa-file-alt"></i> &nbsp;Belge Talep </span>
+        <div id="belge" style="display:none;">
+            <a href="#">Belge Talep</a>
+        </div>
+        <!-- #Menu Item -->
+
+        <!-- Menu Item -->
+        <span class="list" onclick="$('#kimlik').toggle('medium');" ><i class="fa fa-id-card"></i> &nbsp;Kimlik Kartı </span>
+        <div id="kimlik" style="display:none;">
+            <a href="#">Kimlik Kartı Talep</a>
+        </div>
+        <!-- #Menu Item -->
+
+        <!-- Menu Item -->
+        <span class="list" onclick="$('#mezuniyet').toggle('medium');" ><i class="fa fa-graduation-cap"></i> &nbsp;Mezuniyet İşlemleri </span>
+        <div id="mezuniyet" style="display:none;">
+            <a href="#">Mezuniyet Takip</a>
+        </div>
+        <!-- #Menu Item -->
+
+        <!-- Menu Item -->
+        <span class="list" onclick="$('#harc').toggle('medium');" ><i class="fa fa-money-bill-alt"></i> &nbsp;Harç İşlemleri </span>
+        <div id="harc" style="display:none;">
+            <a href="#">Online Harç Odeme</a>
+        </div>
+        <!-- #Menu Item -->
+
+        <!-- Menu Item -->
+        <span class="list"><i class="fa fa-sign-out-alt"></i> &nbsp;Çıkış </span>
+
+        <!-- #Menu Item -->
+
     </div>
-<!-- #Menu Item -->
-
-<!-- Menu Item -->
-  <span class="list" onclick="$('#belge').toggle('medium');" ><i class="fa fa-file-alt"></i> &nbsp;Belge Talep </span>
-    <div id="belge" style="display:none;">
-      <a href="#">Belge Talep</a>
-    </div>
-<!-- #Menu Item -->
-
-<!-- Menu Item -->
-  <span class="list" onclick="$('#kimlik').toggle('medium');" ><i class="fa fa-id-card"></i> &nbsp;Kimlik Kartı </span>
-    <div id="kimlik" style="display:none;">
-      <a href="#">Kimlik Kartı Talep</a>
-    </div>
-<!-- #Menu Item -->
-
-<!-- Menu Item -->
-  <span class="list" onclick="$('#mezuniyet').toggle('medium');" ><i class="fa fa-graduation-cap"></i> &nbsp;Mezuniyet İşlemleri </span>
-    <div id="mezuniyet" style="display:none;">
-      <a href="#">Mezuniyet Takip</a>
-    </div>
-<!-- #Menu Item -->
-
-<!-- Menu Item -->
-  <span class="list" onclick="$('#harc').toggle('medium');" ><i class="fa fa-money-bill-alt"></i> &nbsp;Harç İşlemleri </span>
-    <div id="harc" style="display:none;">
-      <a href="#">Online Harç Odeme</a>
-    </div>
-<!-- #Menu Item -->
-
-<!-- Menu Item -->
-  <span class="list"><i class="fa fa-sign-out-alt"></i> &nbsp;Çıkış </span>
-
-<!-- #Menu Item -->
-
-</div>
 
 
 </div>
 
 <div id="main">
-  <span class="closeBtn" onclick="openNav()">&#9776;</span>
-  <div class=" mainDiv container-fluid">
-      <div class="row">
-        <div class="col-md-2">
-          <img src="img/koala.jpg" height="150" width="150" class="rounded" alt="">
-        </div>
-        <div class="col-md-4 person-sm-info">
-          <p class="h5"> Süleyman Sevimli </p>
-          <p class="text-muted"> Öğrenci </p>
-          <a href="#" class="btn btn-primary"> <i class="fa fa-user"></i> </a>
-          <a href="#" class="btn btn-primary"> <i class="fa fa-envelope"></i> </a>
-          <a href="#" class="btn btn-primary"> <i class="fa fa-flag"></i> </a>
-          <a href="#" class="btn btn-primary"> <i class="fa fa-question"></i> </a>
-          <a href="#" class="btn btn-primary"> <i class="fa fa-sign-out-alt"></i> </a>
-        </div>
-        <div class="col-md-5">
-          <div class="number">11080 </div> <span>kişi Online <span class="online-user">---</span></span>
-        </div>
-      </div>
+    <span class="closeBtn" onclick="openNav()">&#9776;</span>
+    <!-- Header -->
+    <div class=" mainDiv container-fluid">
+        <div class="row">
+            <div class="col-md-2">
+                <img src="img/koala.jpg" height="150" width="150" class="rounded" alt="">
+            </div>
+            <div class="col-md-4 person-sm-info">
+                <p class="h5"> Süleyman Sevimli </p>
+                <p class="text-muted"> Öğrenci </p>
 
-  </div>
-  <div class="row">
-    <div class="col-md-12">
-      <nav class="nav-justified" style="padding-left: 15px;padding-right: 15px; background:#ddd; color:#818181">
-        <div class="nav nav-tabs" id="nav-tab" role="tablist">
-          <a  aria-selected="false"></a>
-          <a class="nav-item nav-link active" id="nav-duyuru-tab" data-toggle="tab" href="#nav-duyuru" role="tab" aria-controls="nav-duyuru" aria-selected="true">Duyurular</a>
-          <a class="nav-item nav-link" id="nav-sinav-tab" data-toggle="tab" href="#nav-sinav" role="tab" aria-controls="nav-sinav" aria-selected="false">Sınav Sonuçları</a>
-          <a class="nav-item nav-link" id="nav-not-tab" data-toggle="tab" href="#nav-not" role="tab" aria-controls="nav-not" aria-selected="false">Not Kartı</a>
-          <a class="nav-item nav-link" id="nav-yoksis-tab" data-toggle="tab" href="#nav-yoksis-info" role="tab" aria-controls="nav-yoksis" aria-selected="false">YÖKSİS Bilgilerim</a>
-          <a class="nav-item nav-link" id="nav-devam-tab" data-toggle="tab" href="#nav-devam" role="tab" aria-controls="nav-devam" aria-selected="false">Devamsızlık Bilgileri</a>
+                <!-- Mini Menu -->
+                <a href="#" class="btn btn-primary" title=""> <i class="fa fa-user"></i> </a>
+                <a href="#" class="btn btn-primary" title=""> <i class="fa fa-envelope"></i></a>
+                <a href="#" class="btn btn-primary" title=""> <i class="fa fa-flag"></i> </a>
+                <a href="#" class="btn btn-primary" title=""> <i class="fa fa-question"></i> </a>
+                <a href="#" class="btn btn-primary" title=""> <i class="fa fa-sign-out-alt"></i> </a>
+            </div>
+            <!-- #Mini Menu -->
+
+            <!-- Online User Counter -->
+            <div class="col-md-5">
+                <div class="number">11080 </div> <span>kişi Online <span class="online-user">---</span></span>
+            </div>
+            <!-- #Online User Counter -->
+
         </div>
-      </nav>
-      <div class="tab-content" id="nav-tabContent">
-        <div class="tab-pane fade show active" id="nav-duyuru" role="tabpanel" aria-labelledby="nav-duyuru-tab"> <p class="h1">Duyurular</p>
-
-          <div class="alert alert-danger" role="alert">
-            <p>
-              <span class="h5" style="display: block">Önemli Duyuru !</span>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-              Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          </div>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-         </div>
-        <div class="tab-pane fade" id="nav-sinav" role="tabpanel" aria-labelledby="nav-sinav-tab"><p class="h1">Sınav Sonuçları</p></div>
-        <div class="tab-pane fade" id="nav-not" role="tabpanel" aria-labelledby="nav-not-tab"><p class="h1">Not Kartı</p></div>
-        <div class="tab-pane fade" id="nav-yoksis-info" role="tabpanel" aria-labelledby="nav-yoksis-tab"><p class="h1">YÖKSİS Bilgilerim</p></div>
-        <div class="tab-pane fade" id="nav-devam" role="tabpanel" aria-labelledby="nav-devam-tab"><p class="h1">Devamsızlık Bilgilerim</p></div>
-      </div>
     </div>
-  </div>
+    <!-- #Header -->
+    <!-- Tab Shortcut -->
+    <div class="row">
+        <div class="col-md-12">
+            <!-- Tabs -->
+            <nav class="nav-justified" style="padding-left: 15px;padding-right: 15px; background:#ddd; color:#818181">
+                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                    <a  aria-selected="false"></a>
+                    <a class="nav-item nav-link" id="nav-duyuru-tab" data-toggle="tab" href="#nav-duyuru" role="tab" aria-controls="nav-duyuru" aria-selected="false">Duyurular</a>
+                    <a class="nav-item nav-link " id="nav-sinav-tab" data-toggle="tab" href="#nav-sinav" role="tab" aria-controls="nav-sinav" aria-selected="true">Sınav Sonuçları</a>
+                    <a class="nav-item nav-link " id="nav-not-tab" data-toggle="tab" href="#nav-not" role="tab" aria-controls="nav-not" aria-selected="false">Not Kartı</a>
+                    <a class="nav-item nav-link " id="nav-yoksis-tab" data-toggle="tab" href="#nav-yoksis-info" role="tab" aria-controls="nav-yoksis" aria-selected="false">YÖKSİS Bilgilerim</a>
+                    <a class="nav-item nav-link active" id="nav-devam-tab" data-toggle="tab" href="#nav-devam" role="tab" aria-controls="nav-devam" aria-selected="false">Devamsızlık Bilgileri</a>
+                </div>
+            </nav>
+            <!-- #Tabs -->
+
+            <!-- #Tab Content -->
+            <div class="tab-content" id="nav-tabContent">
+                <!-- Duyurular -->
+                <div class="tab-pane fade " id="nav-duyuru" role="tabpanel" aria-labelledby="nav-duyuru-tab"> <p class="h2 text-center">Duyurular</p>
+                    <!-- Önemli Duyuru -->
+                    <div class="alert alert-danger" role="alert">
+                        <p>
+                            <span class="h5" style="display: block">Önemli Duyuru !</span>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    </div>
+                    <!-- #Önemli Duyuru -->
+                    <!-- Standart Duyurular -->
+
+                        <!-- Duyuru -->
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title text-center">Card title</h5>
+                                <h6 class="card-subtitle mb-2 text-muted text-center">Card subtitle</h6>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                            </div>
+                            <div class="card-footer text-muted text-right">
+                                2 dakika önce
+                            </div>
+                        </div>
+                        <!-- #Duyuru -->
+
+                        <!-- Duyuru -->
+                        <div class="card ">
+                            <div class="card-body">
+                                <h5 class="card-title text-center">Card title</h5>
+                                <h6 class="card-subtitle mb-2 text-muted text-center">Card subtitle</h6>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                            </div>
+                            <div class="card-footer text-muted text-right">
+                                2 dakika önce
+                            </div>
+                        </div>
+                        <!-- #Duyuru -->
+
+                        <!-- Duyuru -->
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title text-center">Card title</h5>
+                                <h6 class="card-subtitle mb-2 text-muted text-center">Card subtitle</h6>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                            </div>
+                            <div class="card-footer text-muted text-right">
+                                2 dakika önce
+                            </div>
+                        </div>
+                        <!-- #Duyuru -->
+                    </div>
+                    <!-- #Standart Duyuru -->
+
+                <!-- #Duyurular -->
+
+                <!-- Sınav Sonuçları -->
+                <div class="tab-pane fade" id="nav-sinav" role="tabpanel" aria-labelledby="nav-sinav-tab"><p class="h1">Sınav Sonuçları</p>
+                  <!-- Dönem Seçimleri -->
+                  <div class="col-md-12">
+                    <table class="table table-sm table-borderless" cellspacing="0" >
+                        <tr>
+                          <td>Program</td>
+                          <td>
+                            <select class="custom-select" id="inputGroupSelect04" aria-label="Example select with button addon">
+                              <option selected>Seçim...</option>
+                              <option value="1">Yönetim Bilişim Sistemleri</option>
+                            </select>
+                        </td>
+                        </tr>
+                        <tr>
+                          <td>Akademik Yıl</td>
+                          <td>
+                            <select class="custom-select" id="inputGroupSelect04" aria-label="Example select with button addon">
+                              <option selected>Seçim...</option>
+                              <option value="1">2015-2016</option>
+                              <option value="2">2016-2017</option>
+                              <option value="3">2017-2018</option>
+                              <option value="4">2018-2019</option>
+                            </select>
+                        </td>
+                        </tr>
+                        <tr>
+                          <td>Dönem</td>
+                          <td>
+                            <select class="custom-select" id="inputGroupSelect04" aria-label="Example select with button addon">
+                              <option selected>Choose...</option>
+                              <option value="1">Güz</option>
+                              <option value="2">Bahar</option>
+                              <option value="3">Yaz</option>
+                            </select>
+                        </td>
+                        </tr>
+                    </table>
+                  </div>
+                  <!-- #Dönem Seçimleri -->
+                  <!-- Sonuçlar -->
+                  <div class="col-md-12">
+                    <table class="table  table-bordered table-hover" border="5">
+                      <thead>
+                        <tr>
+                          <th scope="col">#</th>
+                          <th scope="col">Ders Kodu</th>
+                          <th scope="col">Ders Adı</th>
+                          <th scope="col">Sınav Adı</th>
+                          <th scope="col">Etki Oranı</th>
+                          <th scope="col">Sınav Tarihi</th>
+                          <th scope="col">İlan Tarihi</th>
+                          <th scope="col">Sınav Tipi</th>
+                          <th scope="col">Sınav Ortalaması</th>
+                          <th scope="col">Sınav Notu</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th scope="row">1</th>
+                          <td>YBS 401</td>
+                          <td>Bilişim Etiği</td>
+                          <td>Ara Sınav</td>
+                          <td>40.0</td>
+                          <td>23.11.2018</td>
+                          <td>23.11.2018</td>
+                          <td>Ara Sınav</td>
+                          <td>72.0</td>
+                          <td>69</td>
+                        </tr>
+
+                        <tr>
+                          <th scope="row">2</th>
+                          <td>BSEÇ 429</td>
+                          <td>Bilişim Sistemleri Araştırmaları</td>
+                          <td>Ara Sınav</td>
+                          <td>40.0</td>
+                          <td>22.11.2018</td>
+                          <td>23.11.2018</td>
+                          <td>Ara Sınav</td>
+                          <td>71.0</td>
+                          <td>85</td>
+                        </tr>
+
+                        <tr>
+                          <th scope="row">3</th>
+                          <td>YD 409</td>
+                          <td>Mesleki İngilizce III</td>
+                          <td>Ara Sınav</td>
+                          <td>40.0</td>
+                          <td>17.11.2018	</td>
+                          <td>26.11.2018</td>
+                          <td>Ara Sınav</td>
+                          <td>73.0</td>
+                          <td>98</td>
+                        </tr>
+
+                      </tbody>
+                    </table>
+                  </div>
+                  <!-- #Sonuçlar -->
+                </div>
+                <!-- #Sınav Sonuçları -->
+        <div class="tab-pane fade" id="nav-not" role="tabpanel" aria-labelledby="nav-not-tab">
+          <p class="h1">Not Kartı</p>
+          <div class="col-md-12">
+            <select class="custom-select" name="">
+              <option value="1">Yönetim Bilişim Sistemleri</option>
+            </select>
+            <div class="col-md-12 mx-auto">
+                <table class="table table-bordered table-hover">
+                  <thead class="text-center" bgcolor="grey">
+                    <td colspan="4">2015-2016 Eğitim Öğretim Yılı</td>
+                  </thead>
+                  <thead style="background-color:#111;color:#fff; border:1px solid #000">
+                    <td>Kodu</td>
+                    <td>Ders Adı</td>
+                    <td>Kredi</td>
+                    <td>Notu</td>
+                  </thead>
+                  <tr>
+                    <td>EKO 101</td>
+                    <td>Matematik I (5070) </td>
+                    <td>3.0</td>
+                    <td>BB</td>
+                  </tr>
+                  <tr>
+                    <td>GK 113</td>
+                    <td>Türk Dili I (6646) </td>
+                    <td>2.0</td>
+                    <td>G</td>
+                  </tr>
+                  <tr>
+                    <td>YBS 107</td>
+                    <td>Bilgisayar ve Bilgi Sistemlerine Giriş (39353) </td>
+                    <td>3.0</td>
+                    <td>BA</td>
+                  </tr>
+                  <tr>
+                    <td> <p class="h6">Toplam</p> </td>
+                    <td></td>
+                    <td> <strong>Kredi</strong> </td>
+                    <td> <strong>Agno</strong> </td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td></td>
+                    <td>8.0</td>
+                    <td>3.03</td>
+                  </tr>
+                </table>
+
+
+                <table class="table table-bordered table-hover">
+                  <thead class="text-center" bgcolor="grey">
+                    <td colspan="4">2015-2016 Eğitim Öğretim Yılı</td>
+                  </thead>
+                  <thead style="background-color:#111;color:#fff; border:1px solid #000">
+                    <td>Kodu</td>
+                    <td>Ders Adı</td>
+                    <td>Kredi</td>
+                    <td>Notu</td>
+                  </thead>
+                  <tr>
+                    <td>EKO 101</td>
+                    <td>Matematik I (5070) </td>
+                    <td>3.0</td>
+                    <td>BB</td>
+                  </tr>
+                  <tr>
+                    <td>GK 113</td>
+                    <td>Türk Dili I (6646) </td>
+                    <td>2.0</td>
+                    <td>G</td>
+                  </tr>
+                  <tr>
+                    <td>YBS 107</td>
+                    <td>Bilgisayar ve Bilgi Sistemlerine Giriş (39353) </td>
+                    <td>3.0</td>
+                    <td>BA</td>
+                  </tr>
+                  <tr>
+                    <td> <p class="h6">Toplam</p> </td>
+                    <td></td>
+                    <td> <strong>Kredi</strong> </td>
+                    <td> <strong>Agno</strong> </td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td></td>
+                    <td>8.0</td>
+                    <td>3.03</td>
+                  </tr>
+                </table>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="nav-yoksis-info" role="tabpanel" aria-labelledby="nav-yoksis-tab">
+          <p class="h1">YÖKSİS Bilgilerim</p>
+          <div class="card border-primary w-100">
+            <div class="card-body text-primary">
+              <p class="card-text">Bu sayfada sadece Atatürk Üniversitesi'ndeki kayıtlarınızı görebilirsiniz. Başka üniversitelerdeki kayıtlarınızı göremezsiniz.</p>
+            </div>
+          </div>
+          <div class="card border-danger w-100">
+            <div class="card-body text-danger">
+              <h5 class="card-title">Dikkat !</h5>
+              <p class="card-text">Üniversitemizde kayıtlı veya mezun olduğunuz programlar için bilgilerinizde eksiklik ya da yanlışlık olduğunu düşünüyorsanız
+                sol tarafta yer alan YARDIM menüsünden TALEP OLUŞTUR işlemini yaparak probleminizi bildirebilirsiniz.
+                Destek ekibi konu ile ilgili olarak gerekli işlemi yapacaktır.
+                Talebinizin sonucunu TALEPLERİ GÖRÜNTÜLE linkinden takip edebilirsiniz.</p>
+            </div>
+          </div>
+          <table class="table table-hover table-bordered">
+              <tr>
+                <td class="w-50">Adı </td>
+                <td>:</td>
+                <td class="col">SÜLEYMAN</td>
+              </tr>
+              <tr>
+                <td>SOYADI </td>
+                <td>:</td>
+                <td>SEVİMLİ</td>
+              </tr>
+              <tr>
+                  <td>GİRİŞ PUANI</td>
+                  <td>:</td>
+                  <td>259.539</td>
+              </tr>
+              <tr>
+                <td>AYRILMA NEDENİ</td>
+                <td>:</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>AYRILMA TARİHİ</td>
+                <td>:</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>NOTU (4'lük Sisteme Göre)</td>
+                <td>:</td>
+                <td>2.89</td>
+              </tr>
+              <tr>
+                <td>SINIFI</td>
+                <td>:</td>
+                <td>4. SINIF</td>
+              </tr>
+              <tr>
+                <td>GİRİŞ PUAN TÜRÜ</td>
+                <td>:</td>
+                <td>DİĞER</td>
+              </tr>
+              <tr>
+                <td>GİRİŞ TÜRÜ</td>
+                <td>:</td>
+                <td>ÖSYS</td>
+              </tr>
+              <tr>
+                <td>KAYIT TARİHİ</td>
+                <td>:</td>
+                <td>28.7.2015</td>
+              </tr>
+              <tr>
+                <td>BİRİM ADI</td>
+                <td>:</td>
+                <td>ATATÜRK ÜNİVERSİTESİ / İKTİSADİ VE İDARİ BİLİMLER FAKÜLTESİ / YÖNETİM BİLİŞİM SİSTEMLERİ PR.</td>
+              </tr>
+              <tr>
+                <td>ÖĞRENİM SÜRESİ</td>
+                <td>:</td>
+                <td>4</td>
+              </tr>
+          </table>
+        </div>
+        <div class="tab-pane fade show active" id="nav-devam" role="tabpanel" aria-labelledby="nav-devam-tab">
+          <p class="h1">Devamsızlık Bilgileri</p>
+          <div class="col-md-12">
+            <table class="table table-hover table-bordered " >
+              <thead>
+                <td>Ders Adı</td>
+                <td>Ders Kodu</td>
+                <td>Ders Yoklama Durumu</td>
+              </thead>
+              <tr>
+                <td>Bilişim Sistemleri Araştırması</td>
+                <td>BSEÇ 429</td>
+                <td>Henüz yoklama bilgisi girilmemiş</td>
+              </tr>
+              <tr>
+                <td>Yapay Zeka</td>
+                <td>YBS 403</td>
+                <td>
+                  <div class="col-md-12" style="color:#fff">
+                    <div class="progress">
+                      <span class="gelmedi rounded-right bg-danger text-center w-75 h-100">%75</span>
+                    </div>
+                    <div class="progress">
+                      <span class="geldi rounded-left bg-success text-center w-25"> %25 </span>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+
+              <tr>
+                <td>Mesleki İngilizce 3</td>
+                <td>YD 409</td>
+                <td>
+                  <div class="col-md-12" style="color:#fff">
+                    <div class="progress">
+                      <span class="gelmedi rounded-right bg-danger text-center w-50 h-100">%50</span>
+                    </div>
+                    <div class="progress">
+                      <span class="geldi rounded-left bg-success text-center w-50"> %50 </span>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+            </table>
+            
+          </div>
+        </div>
+    </div>
+    <!-- #Tab Content -->
+</div>
+</div>
+<!-- #Tab Shortcut -->
 </div>
 
 
