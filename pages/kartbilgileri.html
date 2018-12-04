@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <title>Hoşgeldiniz.</title>
+</head>
+<body>
+
+  <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)"  class="closebtn" onclick="closeNav()">&times;</a>
+      <div class="col-md-12 profil-info">
+          <div class="row">
+              <div class="col-md-4">
+                  <img src="../img/veli.png" class="circle-image" width="70" height="70" alt="">
+              </div>
+              <div class="col-md-8">
+                  <span class="user-name"> Süleyman Sevimli </span>
+                  <span class="unvan"> Öğrenci </span>
+              </div>
+          </div>
+          <div class="col-md-7" style="float:right;margin-right:5%;">
+              <i class="fa fa-home sideNavIcon"></i>
+              <i class="fa fa-user sideNavIcon"></i>
+              <i class="fa fa-comment sideNavIcon"></i>
+              <i class="fa fa-external-link-alt sideNavIcon"></i>
+          </div>
+      </div>
+      <div class="col-md-12 menu-items">
+          <!-- Menu Item -->
+          <span class="list" onclick="$('#personal').toggle('medium');"> <i class="fa fa-user"></i> &nbsp;Kişisel Bilgiler </span>
+          <div id="personal" style="display:none;">
+              <a href="kartbilgileri.html">Kart Bilgileri</a>
+              <a href="#">Özlük Bilgileri</a>
+              <a href="#">Kütüphane</a>
+              <a href="#">Şifre Değiştirme</a>
+              <a href="#">ATA KİMLİK</a>
+              <a href="#">SSL - VPN</a>
+          </div>
+          <!-- #Menu Item -->
+
+          <!-- Menu Item -->
+          <span class="list" onclick="$('#basvuru-islemleri').toggle('medium');" ><i class="fa fa-briefcase"></i> &nbsp;Başvuru İşlemleri </span>
+          <div id="basvuru-islemleri" style="display:none;">
+              <a href="#">Değişim Programları Başvuru</a>
+              <a href="#">Kayıt Başvuruları</a>
+          </div>
+          <!-- #Menu Item -->
+
+          <!-- Menu Item -->
+          <span class="list" onclick="$('#ogrenim').toggle('medium');" ><i class="fa fa-school"></i> &nbsp;Öğrenim </span>
+          <div id="ogrenim" style="display:none;">
+              <a href="#">Agno Hesapla</a>
+              <a href="#">Burs Başvurusu</a>
+              <a href="#">Ders Alma</a>
+              <a href="#">Ders Alma Listesi</a>
+              <a href="#">Ders Bilgi Sistemi</a>
+              <a href="#">Ders Programı</a>
+              <a href="#">Not Kartı</a>
+              <a href="#">Sınav Yer Bilgisi</a>
+              <a href="#">Sınav Sonuçları</a>
+              <a href="#">Yoklama Bilgisi</a>
+          </div>
+          <!-- #Menu Item -->
+
+          <!-- Menu Item -->
+          <span class="list" onclick="$('#mesaj').toggle('medium');" ><i class="fa fa-comment"></i> &nbsp;Mesajlaşma </span>
+          <div id="mesaj" style="display:none;">
+              <a href="#">Mesajlar</a>
+              <a href="#">Mesaj Gonder</a>
+          </div>
+          <!-- #Menu Item -->
+
+          <!-- Menu Item -->
+          <span class="list" onclick="$('#belge').toggle('medium');" ><i class="fa fa-file-alt"></i> &nbsp;Belge Talep </span>
+          <div id="belge" style="display:none;">
+              <a href="#">Belge Talep</a>
+          </div>
+          <!-- #Menu Item -->
+
+          <!-- Menu Item -->
+          <span class="list" onclick="$('#kimlik').toggle('medium');" ><i class="fa fa-id-card"></i> &nbsp;Kimlik Kartı </span>
+          <div id="kimlik" style="display:none;">
+              <a href="#">Kimlik Kartı Talep</a>
+          </div>
+          <!-- #Menu Item -->
+
+          <!-- Menu Item -->
+          <span class="list" onclick="$('#mezuniyet').toggle('medium');" ><i class="fa fa-graduation-cap"></i> &nbsp;Mezuniyet İşlemleri </span>
+          <div id="mezuniyet" style="display:none;">
+              <a href="#">Mezuniyet Takip</a>
+          </div>
+          <!-- #Menu Item -->
+
+          <!-- Menu Item -->
+          <span class="list" onclick="$('#harc').toggle('medium');" ><i class="fa fa-money-bill-alt"></i> &nbsp;Harç İşlemleri </span>
+          <div id="harc" style="display:none;">
+              <a href="#">Online Harç Odeme</a>
+          </div>
+          <!-- #Menu Item -->
+
+          <!-- Menu Item -->
+          <span class="list"><i class="fa fa-sign-out-alt"></i> &nbsp;Çıkış </span>
+
+          <!-- #Menu Item -->
+
+      </div>
+  </div>
+  <div id="main">
+      <span class="closeBtn" onclick="openNav()">&#9776;</span>
+      <div class="col-md-12">
+        <div class="row">
+          <div class=" mainDiv container-fluid">
+
+                <div class="row">
+                  <div class="col-lg-2" >
+                      <img src="../img/koala.jpg" height="130" width="150" class="rounded" alt="">
+                  </div>
+                  <div class="col-md-5 person-sm-info">
+                      <p class="h5"> Süleyman Sevimli </p>
+                      <p class="text-muted"> Öğrenci </p>
+                  </div>
+
+
+                  <div class="col-md-1" style="float:right">
+                    <div class="progress">
+                      <span class="rounded-right bg-success text-center w-100" style="color:#fff;" >11080</span>
+                    </div>
+                    <p>Kişi Online</p>
+                  </div>
+
+
+                  <div class="col-md-2">
+                    <a class="btn btn-danger" href="#">Oturumu Kapat</a>
+                  </div>
+
+              </div>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <div class="col-md-12">
+        <span class="h3"><i class="fa fa-credit-card"></i> Kart Bilgilerim</span>
+        <hr>
+        <div class="row">
+          <div class="col-md-6">
+            <table class="table table-borderless table-sm">
+              <tr>
+                <td>Kart Sahibi</td>
+                <td>
+                <input type="text" name="" value="Süleyman Sevimli" class="form-control" disabled>
+              </td>
+              </tr>
+              <tr>
+                <td>T.C Kimlik</td>
+                <td>
+                <input class="form-control" type="text" name="" value="12345678901" disabled>
+              </td>
+              </tr>
+            </table>
+          </div>
+
+        </div>
+        <div class="col-md-8">
+          <table class="table table-hover table-bordered text-center" >
+            <thead style="background:#111;color:#fff" >
+              <td>Kart Türü</td>
+              <td>Kart No</td>
+              <td>Son İşlem Bedeli</td>
+              <td>Bakiye (₺)</td>
+              <td>İşlem Listesi</td>
+            </thead>
+            <tr>
+              <td>Öğrenci</td>
+              <td>349680AA</td>
+              <td>2.0</td>
+              <td>5.0</td>
+              <td><button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg">Seç</button></td>
+            </tr>
+          </table>
+        </div>
+
+
+        <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">İşlemler</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+                </button>
+                </div>
+              <table class="table table-hover table-bordered text-center" >
+                <thead style="background:#111;color:#fff" >
+                  <td>İşlem Türü</td>
+                  <td>İşlem Noktası</td>
+                  <td>İşlem Turarı (TL)</td>
+                  <td>Son Tutar</td>
+                  <td>İşlem Zamanı</td>
+                </thead>
+                <tr>
+                  <td>Kişi Harcama	</td>
+                  <td>Merkez Yemekhane Turnike3</td>
+                  <td>2</td>
+                  <td>2</td>
+                  <td>19.11.2018 17:11</td>
+                </tr>
+                <tr>
+                  <td>Kişi Harcama	</td>
+                  <td>Merkez Yemekhane Turnike4</td>
+                  <td>2</td>
+                  <td>4</td>
+                  <td>16.11.2018 17:20</td>
+                </tr>
+                <tr>
+                  <td>Para Yükleme</td>
+                  <td>Merkez Yemekhane Kiosk4</td>
+                  <td>5</td>
+                  <td>6</td>
+                  <td>15.11.2018 13:42</td>
+                </tr>
+              </table>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Kapat</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+  </div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.js" ></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<script src="../js/main.js"></script>
+
+</body>
+</html>

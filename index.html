@@ -34,7 +34,7 @@
         <!-- Menu Item -->
         <span class="list" onclick="$('#personal').toggle('medium');"> <i class="fa fa-user"></i> &nbsp;Kişisel Bilgiler </span>
         <div id="personal" style="display:none;">
-            <a href="#">Kart Bilgileri</a>
+            <a href="pages/kartbilgileri.html">Kart Bilgileri</a>
             <a href="#">Özlük Bilgileri</a>
             <a href="#">Kütüphane</a>
             <a href="#">Şifre Değiştirme</a>
@@ -135,11 +135,13 @@
             <!-- #Mini Menu -->
 
             <!-- Online User Counter -->
-            <div class="col-md-5">
+            <div class="col-md-4">
                 <div class="number">11080 </div> <span>kişi Online <span class="online-user">---</span></span>
             </div>
             <!-- #Online User Counter -->
-
+            <div class="col-md-2">
+              <a class="btn btn-danger" href="#">Oturumu Kapat</a>
+            </div>
         </div>
     </div>
     <!-- #Header -->
@@ -150,11 +152,11 @@
             <nav class="nav-justified" style="padding-left: 15px;padding-right: 15px; background:#ddd; color:#818181">
                 <div class="nav nav-tabs" id="nav-tab" role="tablist">
                     <a  aria-selected="false"></a>
-                    <a class="nav-item nav-link" id="nav-duyuru-tab" data-toggle="tab" href="#nav-duyuru" role="tab" aria-controls="nav-duyuru" aria-selected="false">Duyurular</a>
+                    <a class="nav-item nav-link active" id="nav-duyuru-tab" data-toggle="tab" href="#nav-duyuru" role="tab" aria-controls="nav-duyuru" aria-selected="false">Duyurular</a>
                     <a class="nav-item nav-link " id="nav-sinav-tab" data-toggle="tab" href="#nav-sinav" role="tab" aria-controls="nav-sinav" aria-selected="true">Sınav Sonuçları</a>
                     <a class="nav-item nav-link " id="nav-not-tab" data-toggle="tab" href="#nav-not" role="tab" aria-controls="nav-not" aria-selected="false">Not Kartı</a>
                     <a class="nav-item nav-link " id="nav-yoksis-tab" data-toggle="tab" href="#nav-yoksis-info" role="tab" aria-controls="nav-yoksis" aria-selected="false">YÖKSİS Bilgilerim</a>
-                    <a class="nav-item nav-link active" id="nav-devam-tab" data-toggle="tab" href="#nav-devam" role="tab" aria-controls="nav-devam" aria-selected="false">Devamsızlık Bilgileri</a>
+                    <a class="nav-item nav-link " id="nav-devam-tab" data-toggle="tab" href="#nav-devam" role="tab" aria-controls="nav-devam" aria-selected="false">Devamsızlık Bilgileri</a>
                 </div>
             </nav>
             <!-- #Tabs -->
@@ -162,7 +164,7 @@
             <!-- #Tab Content -->
             <div class="tab-content" id="nav-tabContent">
                 <!-- Duyurular -->
-                <div class="tab-pane fade " id="nav-duyuru" role="tabpanel" aria-labelledby="nav-duyuru-tab"> <p class="h2 text-center">Duyurular</p>
+                <div class="tab-pane fade show active" id="nav-duyuru" role="tabpanel" aria-labelledby="nav-duyuru-tab"> <p class="h2 text-center">Duyurular</p>
                     <!-- Önemli Duyuru -->
                     <div class="alert alert-danger" role="alert">
                         <p>
@@ -503,7 +505,7 @@
               </tr>
           </table>
         </div>
-        <div class="tab-pane fade show active" id="nav-devam" role="tabpanel" aria-labelledby="nav-devam-tab">
+        <div class="tab-pane fade" id="nav-devam" role="tabpanel" aria-labelledby="nav-devam-tab">
           <p class="h1">Devamsızlık Bilgileri</p>
           <div class="col-md-12">
             <table class="table table-hover table-bordered " >
@@ -547,7 +549,7 @@
                 </td>
               </tr>
             </table>
-            
+
           </div>
         </div>
     </div>
