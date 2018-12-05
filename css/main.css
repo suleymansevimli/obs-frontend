@@ -121,3 +121,12 @@ body {
 th{
   width: 25%;
 }
+.info-icon{
+  color:#000;
+}
+.info-input {
+  margin-bottom:10px;
+}
+.tab-head{
+  margin-top:30px;
+}

@@ -137,28 +137,482 @@
           </div>
         </div>
         <section class="rounded" style="">
-          <nav class="nav-justified" style="background:#ddd;margin-top:-30px;padding-top:35px; padding-left: 15px;padding-right: 15px; color:#818181">
+          <nav class="nav-justified" style=" background:#ddd;margin-top:-30px;padding-top:35px; padding-left: 25px;padding-right: 25px; color:#818181">
             <div class="nav nav-tabs" id="nav-tab" role="tablist">
-              <a class="nav-item nav-link active" id="nav-kimlik-tab" data-toggle="tab" href="#nav-kimlik" role="tab" aria-controls="nav-kimlik" aria-selected="true"><i style="color:#000" class="fa fa-user"></i></a>
-              <a class="nav-item nav-link" id="nav-egitim-tab" data-toggle="tab" href="#nav-egitim" role="tab" aria-controls="nav-egitim" aria-selected="false"><i style="color:#000" class="fa fa-graduation-cap"></i></a>
-              <a class="nav-item nav-link" id="nav-adres-tab" data-toggle="tab" href="#nav-adres" role="tab" aria-controls="nav-adres" aria-selected="false"><i style="color:#000" class="fa fa-search-location"></i></a>
-              <a class="nav-item nav-link" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="false">Home</a>
-              <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Profile</a>
-              <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Contact</a>
+              <a class="nav-item nav-link " id="nav-kimlik-tab" data-toggle="tab" href="#nav-kimlik" role="tab" aria-controls="nav-kimlik" aria-selected="true"><i style="color:#000" class="info-icon fa fa-user"></i></a>
+              <a class="nav-item nav-link " id="nav-egitim-tab" data-toggle="tab" href="#nav-egitim" role="tab" aria-controls="nav-egitim" aria-selected="false"><i style="color:#000" class="info-icon fa fa-graduation-cap"></i></a>
+              <a class="nav-item nav-link " id="nav-adres-tab" data-toggle="tab" href="#nav-adres" role="tab" aria-controls="nav-adres" aria-selected="false"><i style="color:#000" class="info-icon fa fa-location-arrow"></i></a>
+              <a class="nav-item nav-link " id="nav-iletisim-tab" data-toggle="tab" href="#nav-iletisim" role="tab" aria-controls="nav-iletisim" aria-selected="false"><i  class="info-icon fa fa-phone"></i></a>
+              <a class="nav-item nav-link active" id="nav-money-tab" data-toggle="tab" href="#nav-money" role="tab" aria-controls="nav-money" aria-selected="false"><i class="info-icon fa fa-money-check-alt"></i></a>
             </div>
           </nav>
           <div class="tab-content" id="nav-tabContent">
-            <div class="tab-pane fade show active" id="nav-kimlik" role="tabpanel" aria-labelledby="nav-kimlik-tab">Kimlik Bilgileri</div>
-            <div class="tab-pane fade" id="nav-egitim" role="tabpanel" aria-labelledby="nav-egitim-tab">Eğitim Bilgileri</div>
-            <div class="tab-pane fade" id="nav-adres" role="tabpanel" aria-labelledby="nav-adres-tab">Adres Bilgileri</div>
-            <div class="tab-pane fade" id="nav-adres" role="tabpanel" aria-labelledby="nav-adres-tab">Adres Bilgileri</div>
-            <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">...</div>
+            <!-- Kimlik Bilgileri -->
+            <div class="tab-pane fade" id="nav-kimlik" role="tabpanel" aria-labelledby="nav-kimlik-tab">
+                <p class="h3 text-center tab-head">Kimlik Bilgileri</p>
+                  <div class="col-md-3">
+                    <a href="#" class="btn btn-primary" style="display:block;margin-bottom:30px;" disabled>Güncelle</a>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="row">
+                      <div class="col-md-4 ">
+                        <span>Adı : </span>
+                        <input class="form-control" type="text" name="" value="Joe" disabled>
+                      </div>
+
+                      <div class="col-md-4 ">
+                        <span>Soydı : </span>
+                        <input class="form-control" type="text" name="" value="Doe" disabled>
+                      </div>
+
+                      <div class="col-md-4 ">
+                        <span>Baba Adı : </span>
+                        <input class="form-control" type="text" name="" value="Micheal" disabled>
+                      </div>
+
+                      <div class="col-md-4 ">
+                        <span>Anne Adı : </span>
+                        <input class="form-control" type="text" name="" value="Mona" disabled>
+                      </div>
+
+                      <div class="col-md-4 ">
+                        <span>Cinsiyeti : </span>
+                        <input class="form-control" type="text" name="" value="Erkek" disabled>
+                      </div>
+
+                      <div class="col-md-4 ">
+                        <span>Doğum Tarihi : </span>
+                        <input class="form-control" type="text" name="" value="05.03.1997" disabled>
+                      </div>
+
+                      <div class="col-md-4 ">
+                        <span>Doğum Yeri : </span>
+                        <input class="form-control" type="text" name="" value="Düziçi" disabled>
+                      </div>
+
+                      <div class="col-md-4" >
+                        <span>Medeni Hali : </span>
+                        <input class="form-control" type="text" name="" value="Bekar" disabled>
+                      </div>
+
+                      <div class="col-md-4 ">
+                        <span>Kan Grubu : </span>
+                        <select class="form-control" name="">
+                            <option value="">Kan Grubu</option>
+                            <option value="">O rh+</option>
+                            <option value="">O rh-</option>
+                            <option value="">A rh+</option>
+                            <option value="">A rh-</option>
+                        </select>
+                      </div>
+
+                      <div class="col-md-4">
+                        <span>Uyruğu : </span>
+                        <input class="form-control" type="text" name="" value="Türkiye Cumhuriyeti" disabled>
+                      </div>
+
+                      <div class="col-md-4">
+                        <span>T.C Kimlik Numarası : </span>
+                        <input class="form-control" type="text" name="" value="12345678901" disabled>
+                      </div>
+
+                      <div class="col-md-4" >
+                        <span>il : </span>
+                        <input class="form-control" type="text" name="" value="Osmaniye" disabled>
+                      </div>
+
+                      <div class="col-md-4 ">
+                        <span>İlçe : </span>
+                        <input class="form-control" type="text" name="" value="Düziçi" disabled>
+                      </div>
+
+                      <div class="col-md-4">
+                        <span>Mahalle : </span>
+                        <input class="form-control" type="text" name="" value="---" disabled>
+                      </div>
+
+                      <div class="col-md-4">
+                        <span>Cilt No : </span>
+                        <input class="form-control" type="text" name="" value="00" disabled>
+                    </div>
+
+                    <div class="col-md-4">
+                      <span>Kütük No : </span>
+                      <input class="form-control" type="text" name="" value="---" disabled>
+                    </div>
+
+                    <div class="col-md-4">
+                      <span>Aile No : </span>
+                      <input class="form-control" type="text" name="" value="000" disabled>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- #Kimlik Bilgileri -->
+
+            <!-- Eğitim Bilgileri -->
+            <div class="tab-pane fade" id="nav-egitim" role="tabpanel" aria-labelledby="nav-egitim-tab">
+              <p class="h3 text-center tab-head">Eğitim Bilgileri</p>
+              <div class="col-md-12">
+                  <select class="custom-select" name="">
+                    <option value="YBS">Yönetim Bilişim Sistemleri</option>
+                  </select>
+                <div class="col-md-12">
+                    <div class="row" style="margin-top:50px">
+                        <div class="col-md-4 info-input ">
+                          <span>Statü : </span>
+                          <input class="form-control" type="text" name="" value="Devamlı Öğrenci" disabled>
+                        </div>
+
+                        <div class="col-md-4 info-input ">
+                          <span>Öğrenci Numarası : </span>
+                          <input class="form-control" type="text" name="" value="123456789" disabled>
+                        </div>
+
+                        <div class="col-md-4 info-input ">
+                          <span>Burs Bilgisi : </span>
+                          <input class="form-control" type="text" name="" value="Burs Bilgisi Yok" disabled>
+                        </div>
+
+                        <div class="col-md-4 info-input ">
+                          <span>Okuğu Dönem : </span>
+                          <input class="form-control" type="text" name="" value="7" disabled>
+                        </div>
+
+                        <div class="col-md-4 info-input ">
+                          <span>Ayrılış Tarihi : </span>
+                          <input class="form-control" type="text" name="" value="---" disabled>
+                        </div>
+
+                        <div class="col-md-4 info-input ">
+                          <span>Geliş Şekli : </span>
+                          <input class="form-control" type="text" name="" value="ÖSS" disabled>
+                        </div>
+
+                        <div class="col-md-4 info-input ">
+                          <span>Geldiği Okul : </span>
+                          <input class="form-control" type="text" name="" value="---" disabled>
+                        </div>
+
+                        <div class="col-md-4 info-input " >
+                          <span>Mezuniyet Tarihi : </span>
+                          <input class="form-control" type="text" name="" value="---" disabled>
+                        </div>
+
+                        <div class="col-md-4 info-input ">
+                          <span>Danışman Bilgisi : </span>
+                          <input class="form-control" type="text" name="" value="Joe Doe" disabled>
+                        </div>
+
+                        <div class="col-md-4 info-input ">
+                          <span>Kayıt Akademik Yıl : </span>
+                          <input class="form-control" type="text" name="" value="2015-2016" disabled>
+                        </div>
+
+                        <div class="col-md-4 info-input ">
+                          <span>Kayıt Tarih : </span>
+                          <input class="form-control" type="text" name="" value="28.07.2015" disabled>
+                        </div>
+
+                        <div class="col-md-4 info-input ">
+                          <span>Şube : </span>
+                          <input class="form-control" type="text" name="" value="---" disabled>
+                        </div>
+
+                        <div class="col-md-4 info-input ">
+                          <span>Akademik Dönem : </span>
+                          <input class="form-control" type="text" name="" value="7" disabled>
+                        </div>
+
+                        <div class="col-md-4 info-input ">
+                          <span>Mezuniyet Ortalaması : </span>
+                          <input class="form-control" type="text" name="" value="---" disabled>
+                        </div>
+
+                        <div class="col-md-4 info-input " >
+                          <span>Giriş Puanı : </span>
+                          <input class="form-control" type="text" name="" value="259.5386" disabled>
+                        </div>
+
+                        <div class="col-md-4 info-input ">
+                          <span>Geldiği Bölüm : </span>
+                          <input class="form-control" type="text" name="" value="---" disabled>
+                        </div>
+
+                        <div class="col-md-4 info-input ">
+                          <span>Diploma No : </span>
+                          <input class="form-control" type="text" name="" value="---" disabled>
+                        </div>
+
+                        <div class="col-md-4 info-input ">
+                          <span>Müfredat Yılı : </span>
+                          <input class="form-control" type="text" name="" value="2015-2016" disabled>
+                        </div>
+
+                        <div class="col-md-4 info-input ">
+                          <span>Kütük No : </span>
+                          <input class="form-control" type="text" name="" value="---" disabled>
+                        </div>
+
+                        <div class="col-md-4 info-input ">
+                          <span>Aile No : </span>
+                          <input class="form-control" type="text" name="" value="000" disabled>
+                      </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <!-- #Eğitim Bilgileri -->
+            <!-- Adres Bilgileri -->
+            <div class="tab-pane fade" id="nav-adres" role="tabpanel" aria-labelledby="nav-adres-tab">
+              <p class="h3 tab-head text-center">Adres Bilgileri</p>
+              <div class="col-md-12">
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#adresModal">Yeni Adres Ekle</button>
+                <br>
+                <div class="col-md-12">
+                  <br>
+                  <table class="table table-hover table-bordered" >
+                      <thead style="background:#000;color:#fff">
+                        <td>Adres Türü</td>
+                        <td>Adres</td>
+                        <td>İl</td>
+                        <td>İlçe</td>
+                        <td>Posta Kodu</td>
+                        <td>İşlemler</td>
+                      </thead>
+                      <tr>
+                        <td>Ev</td>
+                        <td>Mahalle adı Mah. Cadde adı Cad. No.06</td>
+                        <td>Osmaniye</td>
+                        <td>Düziçi</td>
+                        <td> - - - </td>
+                        <td><i class="fa fa-trash-alt btn btn-danger" onclick="uyariVer()"></i></td>
+                      </tr>
+                  </table>
+                </div>
+              </div>
+            </div>
+            <!-- #Adres Bilgileri -->
+            <div class="tab-pane fade" id="nav-iletisim" role="tabpanel" aria-labelledby="nav-iletisim-tab">
+              <p class="h3 text-center tab-head"> İletişim Bilgileri </p>
+              <div class="col-md-12">
+                <button type="button" class="btn btn-success" data-toggle="modal" data-target="#mailModal">E-Posta Ekle</button>
+                <br>
+                <div class="col-md-12">
+                  <br>
+                  <table class="table table-hover table-bordered" >
+                      <thead style="background:#000;color:#fff">
+                        <td>E-Posta Adresi</td>
+                        <td>İşlemler</td>
+                      </thead>
+                      <tr>
+                        <td>isim.soyisim18@okuladi.edu.tr</td>
+                        <td><i class="fa fa-trash-alt btn btn-danger" onclick="uyariVer()"></i></td>
+                      </tr>
+                  </table>
+                </div>
+              </div>
+
+              <div class="col-md-12">
+                <button type="button" class="btn btn-success" data-toggle="modal" data-target="#numaraModal">Numara Ekle</button>
+                <br>
+                <div class="col-md-12">
+                  <br>
+                  <table class="table table-hover table-bordered" >
+                      <thead style="background:#000;color:#fff">
+                        <td>Türü</td>
+                        <td>Numara</td>
+                        <td>İşlemler</td>
+                      </thead>
+                      <tr>
+                        <td>Ev</td>
+                        <td>0545 555 55 55</td>
+                        <td><i class="fa fa-trash-alt btn btn-danger" onclick="uyariVer()"></i></td>
+                      </tr>
+                      <tr>
+                        <td>İş</td>
+                        <td>0545 565 45 35</td>
+                        <td><i class="fa fa-trash-alt btn btn-danger" onclick="uyariVer()"></i></td>
+                      </tr>
+                  </table>
+                </div>
+              </div>
+
+            </div>
+            <div class="tab-pane fade  show active" id="nav-money" role="tabpanel" aria-labelledby="nav-money-tab">
+                <p class="h3 tab-head">İban Numarası</p>
+                <div class="col-md-12">
+
+                  <span class="h6">Bölüm</span>
+                  <select class="custom-select" name="">
+                    <option value="">Bölüm Seçiniz</option>
+                    <option value="">Yönetim Bilişim Sistemleri</option>
+                  </select>
+                  <br> <br>
+                  <div class="input-group mb-3">
+                    <input type="text" class="form-control" value="TR50015792000289795488755001" placeholder="Iban Numaranızı Yazınız" aria-label="Recipient's username" aria-describedby="button-addon2">
+                    <div class="input-group-append">
+                      <button class="btn btn-success" type="button" id="button-addon2">Kaydet</button>
+                    </div>
+                  </div>
+
+                </div>
+            </div>
           </div>
         </section>
       </div>
+
       <script src="https://code.jquery.com/jquery-3.3.1.js" ></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
       <script src="../js/main.js"></script>
+
+      <!-- Adres ekleme Modal-->
+      <div class="modal fade" id="adresModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Yeni Adres</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="form-group">
+                  <label for="recipient-name" class="col-form-label">Adres Tip:</label>
+                  <select class="custom-select" name="">
+                    <option value="1">İş</option>
+                    <option value="2">Ev</option>
+                    <option value="3">Veli Adresi</option>
+                    <option value="4">Yurt</option>
+                    <option value="3">Staj Adresi</option>
+                    <option value="4">Evrak Teslim Adresi</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="message-text" class="col-form-label">Adres :</label>
+                  <textarea class="form-control" id="message-text"></textarea>
+                </div>
+                  <div class="form-group">
+                    <label for="recipient-name" class="col-form-label">İl:</label>
+                    <select class="custom-select" name="">
+                      <option value="">---</option>
+                      <option value="1">Adana</option>
+                      <option value="2">Osmaniye</option>
+                      <option value="3">Erzurum</option>
+                      <option value="4">İstanbul</option>
+                      <option value="3">Ankara</option>
+                      <option value="4">İzmir</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="recipient-name" class="col-form-label">İlçe:</label>
+                    <select class="custom-select" name="">
+                      <option value="">---</option>
+                      <option value="1">Düziçi</option>
+                      <option value="2">Kadirli</option>
+                      <option value="3">Bahçe</option>
+                      <option value="4">Kozan</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="recipient-name" class="col-form-label">Posta kodu:</label>
+                    <input class="form-control" type="number" name="" value="" placeholder="Posta Kodu">
+                  </div>
+            </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">İptal</button>
+              <button type="button" class="btn btn-success">Kaydet</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- #Adres Ekleme Modal-->
+
+
+      <!-- Mail Ekleme Modal -->
+      <div class="modal fade" id="mailModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Yeni Adres</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <form>
+                  <div class="form-group">
+                    <label for="recipient-name" class="col-form-label">E-Posta Tercihiniz :</label>
+                    <div class="input-group mb-3">
+                      <input type="text" class="form-control" placeholder="Tercihinizi Yazın..." aria-label="tercih" aria-describedby="basic-addon2">
+                      <div class="input-group-append">
+                        <span class="input-group-text" id="basic-addon2">@example.edu.tr</span>
+                      </div>
+                    </div>
+                  </div>
+            </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">İptal</button>
+              <button type="button" class="btn btn-success">Kaydet</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- #Mail Ekleme Modal -->
+
+      <!-- Numara Ekleme Modal -->
+      <div class="modal fade" id="numaraModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Yeni Adres</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="form-group">
+                  <label for="recipient-name" class="col-form-label">Adres Tip:</label>
+                  <select class="custom-select" name="">
+                    <<option value="">Tür Seçin</option>
+                    <option value="2">Ev</option>
+                    <option value="1">İş</option>
+                    <option value="3">Veli Numarası</option>
+                    <option value="4">Yurt</option>
+                  </select>
+                </div>
+
+                  <div class="form-group">
+                    <label for="recipient-name" class="col-form-label">Telefon Numarası:</label>
+                    <input class="form-control" type="text" name="" value="" placeholder="+905...">
+                  </div>
+            </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">İptal</button>
+              <button type="button" class="btn btn-success">Kaydet</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- #Numara Ekleme Modal -->
+
+      <!-- Silme Uyarısı -->
+      <script type="text/javascript">
+        var uyariVer = function(){
+          var answer = confirm("Silmek İstediğinize Emin Misiniz BU İŞLEM GERİ ALINAMAZ !");
+          if (answer) {
+            console.log("Silindi");
+          }else{
+            console.log("İptal İsteği geldi!");
+          }
+        }
+      </script>
+      <!-- #Silme Uyarısı -->
     </body>
     </html>
