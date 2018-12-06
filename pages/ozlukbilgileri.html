@@ -34,8 +34,8 @@
           <span class="list" onclick="$('#personal').toggle('medium');"> <i class="fa fa-user"></i> &nbsp;Kişisel Bilgiler </span>
           <div id="personal" style="display:none;">
               <a href="kartbilgileri.html">Kart Bilgileri</a>
-              <a href="#">Özlük Bilgileri</a>
-              <a href="#">Şifre Değiştirme</a>
+              <a href="ozlukbilgileri.html">Özlük Bilgileri</a>
+              <a href="sifredegistirme.html">Şifre Değiştirme</a>
               <a href="#">ATA KİMLİK</a>
               <a href="#">SSL - VPN</a>
           </div>
@@ -139,16 +139,16 @@
         <section class="rounded" style="">
           <nav class="nav-justified" style=" background:#ddd;margin-top:-30px;padding-top:35px; padding-left: 25px;padding-right: 25px; color:#818181">
             <div class="nav nav-tabs" id="nav-tab" role="tablist">
-              <a class="nav-item nav-link " id="nav-kimlik-tab" data-toggle="tab" href="#nav-kimlik" role="tab" aria-controls="nav-kimlik" aria-selected="true"><i style="color:#000" class="info-icon fa fa-user"></i></a>
+              <a class="nav-item nav-link active" id="nav-kimlik-tab" data-toggle="tab" href="#nav-kimlik" role="tab" aria-controls="nav-kimlik" aria-selected="true"><i style="color:#000" class="info-icon fa fa-user"></i></a>
               <a class="nav-item nav-link " id="nav-egitim-tab" data-toggle="tab" href="#nav-egitim" role="tab" aria-controls="nav-egitim" aria-selected="false"><i style="color:#000" class="info-icon fa fa-graduation-cap"></i></a>
               <a class="nav-item nav-link " id="nav-adres-tab" data-toggle="tab" href="#nav-adres" role="tab" aria-controls="nav-adres" aria-selected="false"><i style="color:#000" class="info-icon fa fa-location-arrow"></i></a>
               <a class="nav-item nav-link " id="nav-iletisim-tab" data-toggle="tab" href="#nav-iletisim" role="tab" aria-controls="nav-iletisim" aria-selected="false"><i  class="info-icon fa fa-phone"></i></a>
-              <a class="nav-item nav-link active" id="nav-money-tab" data-toggle="tab" href="#nav-money" role="tab" aria-controls="nav-money" aria-selected="false"><i class="info-icon fa fa-money-check-alt"></i></a>
+              <a class="nav-item nav-link " id="nav-money-tab" data-toggle="tab" href="#nav-money" role="tab" aria-controls="nav-money" aria-selected="false"><i class="info-icon fa fa-money-check-alt"></i></a>
             </div>
           </nav>
           <div class="tab-content" id="nav-tabContent">
             <!-- Kimlik Bilgileri -->
-            <div class="tab-pane fade" id="nav-kimlik" role="tabpanel" aria-labelledby="nav-kimlik-tab">
+            <div class="tab-pane fade show active" id="nav-kimlik" role="tabpanel" aria-labelledby="nav-kimlik-tab">
                 <p class="h3 text-center tab-head">Kimlik Bilgileri</p>
                   <div class="col-md-3">
                     <a href="#" class="btn btn-primary" style="display:block;margin-bottom:30px;" disabled>Güncelle</a>
@@ -369,7 +369,6 @@
               <div class="col-md-12">
                 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#adresModal">Yeni Adres Ekle</button>
                 <br>
-                <div class="col-md-12">
                   <br>
                   <table class="table table-hover table-bordered" >
                       <thead style="background:#000;color:#fff">
@@ -389,7 +388,6 @@
                         <td><i class="fa fa-trash-alt btn btn-danger" onclick="uyariVer()"></i></td>
                       </tr>
                   </table>
-                </div>
               </div>
             </div>
             <!-- #Adres Bilgileri -->
@@ -439,7 +437,7 @@
               </div>
 
             </div>
-            <div class="tab-pane fade  show active" id="nav-money" role="tabpanel" aria-labelledby="nav-money-tab">
+            <div class="tab-pane fade" id="nav-money" role="tabpanel" aria-labelledby="nav-money-tab">
                 <p class="h3 tab-head">İban Numarası</p>
                 <div class="col-md-12">
 
