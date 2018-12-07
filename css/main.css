@@ -177,3 +177,7 @@ th{
   color:#fff;
   font-size: 11pt;
 }
+.mini-menu-sidenav{
+  float:right;
+  margin-right:5%;
+}

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html xmlns="http://www.w3.org/1999/html">
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
@@ -10,33 +10,50 @@
 </head>
 <body>
 
+  <!-- Sidebar -->
   <div id="mySidenav" class="sidenav">
+
+    <!-- Close Icon -->
       <a href="javascript:void(0)"  class="closebtn" onclick="closeNav()">&times;</a>
+    <!-- #Close Icon -->
+
+    <!-- Profil Info -->
       <div class="col-md-12 profil-info">
           <div class="row">
+            <!-- Profil Picture -->
               <div class="col-md-4">
                   <img src="../../img/veli.png" class="circle-image" width="70" height="70" alt="">
               </div>
+            <!-- #Profil Picture -->
+
+              <!-- Mini Profil Info -->
               <div class="col-md-8">
                   <span class="user-name"> Süleyman Sevimli </span>
                   <span class="unvan"> Öğrenci </span>
               </div>
+              <!-- Mini Profil Info -->
           </div>
-          <div class="col-md-7" style="float:right;margin-right:5%;">
+          <!-- Mini Menu -->
+          <div class="col-md-7 mini-menu-sidenav" style="float:right;margin-right:5%;">
               <i class="fa fa-home sideNavIcon"></i>
               <i class="fa fa-user sideNavIcon"></i>
               <i class="fa fa-comment sideNavIcon"></i>
               <i class="fa fa-external-link-alt sideNavIcon"></i>
           </div>
+          <!-- #Mini Menu -->
       </div>
+      <!-- #Profil Info -->
+
+      <!-- Menu -->
       <div class="col-md-12 menu-items">
+
           <!-- Menu Item -->
           <span class="list" onclick="$('#personal').toggle('medium');"> <i class="fa fa-user"></i> &nbsp;Kişisel Bilgiler </span>
           <div id="personal" style="display:none;">
               <a href="kartbilgileri.html">Kart Bilgileri</a>
               <a href="ozlukbilgileri.html">Özlük Bilgileri</a>
               <a href="sifredegistirme.html">Şifre Değiştirme</a>
-              <a href="#">ATA KİMLİK</a>
+              <a href="unikimlik.html">ATA KİMLİK</a>
           </div>
           <!-- #Menu Item -->
 
@@ -95,9 +112,14 @@
           <!-- #Menu Item -->
 
       </div>
-      </div>
+      <!-- #Menu -->
+  </div>
+  <!-- #Sidebar -->
+
+  <!-- Main Div -->
       <div id="main">
           <span class="closeBtn" onclick="openNav()">&#9776;</span>
+          <!-- Mini Profil Info -->
           <div class="col-md-12">
             <div class="row">
               <div class=" mainDiv container-fluid">
@@ -122,10 +144,13 @@
                     </div>
 
                 </div>
+              </div>
             </div>
           </div>
-        </div>
-        <section class="rounded" style="">
+        <!-- #Mini Profil Info -->
+
+        <section class="rounded">
+          <!-- Menu Tabs -->
           <nav class="nav-justified" style=" background:#ddd;margin-top:-30px;padding-top:35px; padding-left: 25px;padding-right: 25px; color:#818181">
             <div class="nav nav-tabs" id="nav-tab" role="tablist">
               <a class="nav-item nav-link active" id="nav-kimlik-tab" data-toggle="tab" href="#nav-kimlik" role="tab" aria-controls="nav-kimlik" aria-selected="true"><i style="color:#000" class="info-icon fa fa-user"></i></a>
@@ -135,6 +160,8 @@
               <a class="nav-item nav-link " id="nav-money-tab" data-toggle="tab" href="#nav-money" role="tab" aria-controls="nav-money" aria-selected="false"><i class="info-icon fa fa-money-check-alt"></i></a>
             </div>
           </nav>
+          <!-- #Menu Tabs -->
+
           <div class="tab-content" id="nav-tabContent">
             <!-- Kimlik Bilgileri -->
             <div class="tab-pane fade show active" id="nav-kimlik" role="tabpanel" aria-labelledby="nav-kimlik-tab">
@@ -320,7 +347,7 @@
 
                         <div class="col-md-4 info-input " >
                           <span>Giriş Puanı : </span>
-                          <input class="form-control" type="text" name="" value="259.5386" disabled>
+                          <input  class="form-control" type="text" name="" value="259.5386" disabled>
                         </div>
 
                         <div class="col-md-4 info-input ">
@@ -352,6 +379,7 @@
               </div>
             </div>
             <!-- #Eğitim Bilgileri -->
+
             <!-- Adres Bilgileri -->
             <div class="tab-pane fade" id="nav-adres" role="tabpanel" aria-labelledby="nav-adres-tab">
               <p class="h3 tab-head text-center">Adres Bilgileri</p>
@@ -359,27 +387,29 @@
                 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#adresModal">Yeni Adres Ekle</button>
                 <br>
                   <br>
-                  <table class="table table-hover table-bordered" >
-                      <thead style="background:#000;color:#fff">
-                        <td>Adres Türü</td>
-                        <td>Adres</td>
-                        <td>İl</td>
-                        <td>İlçe</td>
-                        <td>Posta Kodu</td>
-                        <td>İşlemler</td>
-                      </thead>
-                      <tr>
-                        <td>Ev</td>
-                        <td>Mahalle adı Mah. Cadde adı Cad. No.06</td>
-                        <td>Osmaniye</td>
-                        <td>Düziçi</td>
-                        <td> - - - </td>
-                        <td><i class="fa fa-trash-alt btn btn-danger" onclick="uyariVer()"></i></td>
-                      </tr>
-                  </table>
+                    <table class="table table-hover table-sm table-bordered" >
+                        <thead style="background:#000;color:#fff">
+                          <td>Adres Türü</td>
+                          <td>Adres</td>
+                          <td>İl</td>
+                          <td>İlçe</td>
+                          <td>Posta Kodu</td>
+                          <td>İşlemler</td>
+                        </thead>
+                        <tr>
+                          <td>Ev</td>
+                          <td>Mahalle adı Mah. Cadde adı Cad. No.06</td>
+                          <td>Osmaniye</td>
+                          <td>Düziçi</td>
+                          <td> - - - </td>
+                          <td><i class="fa fa-trash-alt btn btn-danger" onclick="uyariVer()"></i></td>
+                        </tr>
+                    </table>
+                </div>
               </div>
-            </div>
             <!-- #Adres Bilgileri -->
+
+            <!-- İletişim Bilgileri -->
             <div class="tab-pane fade" id="nav-iletisim" role="tabpanel" aria-labelledby="nav-iletisim-tab">
               <p class="h3 text-center tab-head"> İletişim Bilgileri </p>
               <div class="col-md-12">
@@ -426,6 +456,9 @@
               </div>
 
             </div>
+            <!-- #İletişim Bilgileri -->
+
+            <!-- Iban Bilgileri -->
             <div class="tab-pane fade" id="nav-money" role="tabpanel" aria-labelledby="nav-money-tab">
                 <p class="h3 tab-head">İban Numarası</p>
                 <div class="col-md-12">
@@ -445,21 +478,25 @@
 
                 </div>
             </div>
+            <!-- #Iban Tabs -->
           </div>
         </section>
       </div>
+      <!-- #Main Div -->
 
+      <!-- Extends Script Files -->
       <script src="https://code.jquery.com/jquery-3.3.1.js" ></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
       <script src="../../js/main.js"></script>
+      <!-- Extends Script Files -->
 
       <!-- Adres ekleme Modal-->
       <div class="modal fade" id="adresModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg" role="document">
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">Yeni Adres</h5>
+              <h5 class="modal-title" id="">Yeni Adres</h5>
               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
               </button>
@@ -467,8 +504,8 @@
             <div class="modal-body">
               <form>
                 <div class="form-group">
-                  <label for="recipient-name" class="col-form-label">Adres Tip:</label>
-                  <select class="custom-select" name="">
+                  <label for="adres-tipi" class="col-form-label">Adres Tip:</label>
+                  <select id="adres-tipi" class="custom-select" name="">
                     <option value="1">İş</option>
                     <option value="2">Ev</option>
                     <option value="3">Veli Adresi</option>
@@ -482,8 +519,8 @@
                   <textarea class="form-control" id="message-text"></textarea>
                 </div>
                   <div class="form-group">
-                    <label for="recipient-name" class="col-form-label">İl:</label>
-                    <select class="custom-select" name="">
+                    <label for="il" class="col-form-label">İl:</label>
+                    <select id="il" class="custom-select" name="">
                       <option value="">---</option>
                       <option value="1">Adana</option>
                       <option value="2">Osmaniye</option>
@@ -494,8 +531,8 @@
                     </select>
                   </div>
                   <div class="form-group">
-                    <label for="recipient-name" class="col-form-label">İlçe:</label>
-                    <select class="custom-select" name="">
+                    <label for="ilce" class="col-form-label">İlçe:</label>
+                    <select id="ilce" class="custom-select" name="">
                       <option value="">---</option>
                       <option value="1">Düziçi</option>
                       <option value="2">Kadirli</option>
@@ -504,8 +541,8 @@
                     </select>
                   </div>
                   <div class="form-group">
-                    <label for="recipient-name" class="col-form-label">Posta kodu:</label>
-                    <input class="form-control" type="number" name="" value="" placeholder="Posta Kodu">
+                    <label for="posta-kodu" class="col-form-label">Posta kodu:</label>
+                    <input id="posta-kodu" class="form-control" type="number" name="" value="" placeholder="Posta Kodu">
                   </div>
             </form>
             </div>
@@ -532,9 +569,9 @@
             <div class="modal-body">
               <form>
                   <div class="form-group">
-                    <label for="recipient-name" class="col-form-label">E-Posta Tercihiniz :</label>
+                    <label for="e-posta-tercih" class="col-form-label">E-Posta Tercihiniz :</label>
                     <div class="input-group mb-3">
-                      <input type="text" class="form-control" placeholder="Tercihinizi Yazın..." aria-label="tercih" aria-describedby="basic-addon2">
+                      <input id="e-posta-tercih" type="text" class="form-control" placeholder="Tercihinizi Yazın..." aria-label="tercih" aria-describedby="basic-addon2">
                       <div class="input-group-append">
                         <span class="input-group-text" id="basic-addon2">@example.edu.tr</span>
                       </div>
@@ -556,7 +593,7 @@
         <div class="modal-dialog modal-lg" role="document">
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">Yeni Adres</h5>
+              <h5 class="modal-title" >Yeni Adres</h5>
               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
               </button>
@@ -564,8 +601,8 @@
             <div class="modal-body">
               <form>
                 <div class="form-group">
-                  <label for="recipient-name" class="col-form-label">Adres Tip:</label>
-                  <select class="custom-select" name="">
+                  <label for="adres-tipi-ekle" class="col-form-label">Adres Tip:</label>
+                  <select id="adres-tipi-ekle" class="custom-select" name="">
                     <<option value="">Tür Seçin</option>
                     <option value="2">Ev</option>
                     <option value="1">İş</option>
@@ -575,8 +612,8 @@
                 </div>
 
                   <div class="form-group">
-                    <label for="recipient-name" class="col-form-label">Telefon Numarası:</label>
-                    <input class="form-control" type="text" name="" value="" placeholder="+905...">
+                    <label for="telefon-numarası-ekle" class="col-form-label">Telefon Numarası:</label>
+                    <input id="telefon-numarası-ekle" class="form-control" type="text" name="" value="" placeholder="+905...">
                   </div>
             </form>
             </div>

@@ -9,19 +9,29 @@
     <title>Hoşgeldiniz.</title>
 </head>
 <body>
-  <!-- Main Div -->
+  <!-- Sidebar -->
   <div id="mySidenav" class="sidenav">
+
+    <!-- Close Icon -->
       <a href="javascript:void(0)"  class="closebtn" onclick="closeNav()">&times;</a>
+    <!-- #Close Icon -->
+
+    <!-- Profil Info -->
       <div class="col-md-12 profil-info">
-          <div class="row">
-              <div class="col-md-4">
-                  <img src="../../img/veli.png" class="circle-image" width="70" height="70" alt="">
-              </div>
-              <div class="col-md-8">
-                  <span class="user-name"> Süleyman Sevimli </span>
-                  <span class="unvan"> Öğrenci </span>
-              </div>
-          </div>
+        <div class="row">
+          <!-- Profil Picture -->
+            <div class="col-md-4">
+                <img src="../../img/veli.png" class="circle-image" width="70" height="70" alt="">
+            </div>
+          <!-- #Profil Picture -->
+
+            <!-- Mini Profil Info -->
+            <div class="col-md-8">
+                <span class="user-name"> Süleyman Sevimli </span>
+                <span class="unvan"> Öğrenci </span>
+            </div>
+            <!-- Mini Profil Info -->
+        </div>
           <div class="col-md-7" style="float:right;margin-right:5%;">
               <i class="fa fa-home sideNavIcon"></i>
               <i class="fa fa-user sideNavIcon"></i>
@@ -29,7 +39,11 @@
               <i class="fa fa-external-link-alt sideNavIcon"></i>
           </div>
       </div>
+      <!-- #Profil Info -->
+
+      <!-- Menu -->
       <div class="col-md-12 menu-items">
+
           <!-- Menu Item -->
           <span class="list" onclick="$('#personal').toggle('medium');"> <i class="fa fa-user"></i> &nbsp;Kişisel Bilgiler </span>
           <div id="personal" style="display:none;">
@@ -95,43 +109,63 @@
           <!-- #Menu Item -->
 
       </div>
+      <!-- #Menu -->
   </div>
+  <!-- #Sidebar -->
+
+  <!-- Main Div -->
   <div id="main">
+    <!-- Open Icon -->
       <span class="closeBtn" onclick="openNav()">&#9776;</span>
+    <!-- #Open Icon -->
+      <!-- Profil Header -->
       <div class="col-md-12">
         <div class="row">
-          <div class=" mainDiv container-fluid">
-
-                <div class="row">
-                  <div class="col-lg-2" >
-                      <img src="../../img/koala.jpg" height="130" width="150" class="rounded" alt="">
-                  </div>
-                  <div class="col-md-5 person-sm-info">
-                      <p class="h5"> Süleyman Sevimli </p>
-                      <p class="text-muted"> Öğrenci </p>
-                  </div>
-
-
-                  <div class="col-md-2" style="float:right">
-                    <div class="progress">
-                      <span class="rounded-right bg-success text-center w-100" style="color:#fff;" >11080</span>
-                    </div>
-                    <p>Kişi Online</p>
-                  </div>
-
-
-                  <div class="col-md-2">
-                    <a class="btn btn-danger" href="#">Oturumu Kapat</a>
-                  </div>
-
+          <div class="mainDiv container-fluid">
+            <!-- Shortcut and profile-info -->
+            <div class="row">
+              <!-- Profil Picture -->
+              <div class="col-lg-1" >
+                  <img src="../../img/koala.jpg" height="70" width="70" class="rounded" alt="">
               </div>
+              <!-- #Profil Picture -->
+
+              <!-- User Info -->
+              <div class="col-md-3 person-sm-info">
+                  <p class="h5"> Süleyman Sevimli </p>
+                  <p class="text-muted"> Öğrenci </p>
+              </div>
+              <!-- #User Info -->
+
+              <div class="col-md-1 clear"></div>
+
+              <!-- Online User Counter -->
+              <div class="col-md-4" style="float:right">
+                <div class="progress">
+                  <span class="rounded-right bg-success text-center w-100" style="color:#fff;" >11080</span>
+                </div>
+                <p>Kişi Online</p>
+              </div>
+              <!-- #Online User Counter -->
+
+              <!-- Session Destroy -->
+              <div class="col-md-1">
+                <a class="btn btn-danger" href="#">Oturumu Kapat</a>
+              </div>
+              <!-- #Session Destroy -->
+
+          </div>
+          <!-- #Shortcut and profile-info -->
           </div>
         </div>
       </div>
+      <!-- #Profil Header -->
       <hr>
+      <!-- Content -->
       <div class="col-md-12">
         <span class="h3"><i class="fa fa-credit-card"></i> Kart Bilgilerim</span>
         <hr>
+        <!-- Kart Sahibi Bilgileri -->
         <div class="row">
           <div class="col-md-6">
             <table class="table table-borderless table-sm">
@@ -149,8 +183,10 @@
               </tr>
             </table>
           </div>
-
         </div>
+        <!-- #Kart Sahibi Bilgileri -->
+
+        <!-- Kart Detayları -->
         <div class="col-md-8">
           <table class="table table-hover table-bordered text-center" >
             <thead style="background:#111;color:#fff" >
@@ -169,61 +205,68 @@
             </tr>
           </table>
         </div>
+      <!-- #Kart Detayları -->
 
 
-        <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-          <div class="modal-dialog modal-lg">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">İşlemler</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-                </button>
-                </div>
-              <table class="table table-hover table-bordered text-center" >
-                <thead style="background:#111;color:#fff" >
-                  <td>İşlem Türü</td>
-                  <td>İşlem Noktası</td>
-                  <td>İşlem Turarı (TL)</td>
-                  <td>Son Tutar</td>
-                  <td>İşlem Zamanı</td>
-                </thead>
-                <tr>
-                  <td>Kişi Harcama	</td>
-                  <td>Merkez Yemekhane Turnike3</td>
-                  <td>2</td>
-                  <td>2</td>
-                  <td>19.11.2018 17:11</td>
-                </tr>
-                <tr>
-                  <td>Kişi Harcama	</td>
-                  <td>Merkez Yemekhane Turnike4</td>
-                  <td>2</td>
-                  <td>4</td>
-                  <td>16.11.2018 17:20</td>
-                </tr>
-                <tr>
-                  <td>Para Yükleme</td>
-                  <td>Merkez Yemekhane Kiosk4</td>
-                  <td>5</td>
-                  <td>6</td>
-                  <td>15.11.2018 13:42</td>
-                </tr>
-              </table>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Kapat</button>
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
-
+    <!-- #Content -->
   </div>
+<!-- #Main Div -->
 
+<!-- Extends Script Files -->
 <script src="https://code.jquery.com/jquery-3.3.1.js" ></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 <script src="../../js/main.js"></script>
+<!-- Extends Script Files -->
+
+<!-- İslem Modal -->
+<div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">İşlemler</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+        </button>
+        </div>
+      <table class="table table-hover table-bordered text-center" >
+        <thead style="background:#111;color:#fff" >
+          <td>İşlem Türü</td>
+          <td>İşlem Noktası</td>
+          <td>İşlem Turarı (TL)</td>
+          <td>Son Tutar</td>
+          <td>İşlem Zamanı</td>
+        </thead>
+        <tr>
+          <td>Kişi Harcama	</td>
+          <td>Merkez Yemekhane Turnike3</td>
+          <td>2</td>
+          <td>2</td>
+          <td>19.11.2018 17:11</td>
+        </tr>
+        <tr>
+          <td>Kişi Harcama	</td>
+          <td>Merkez Yemekhane Turnike4</td>
+          <td>2</td>
+          <td>4</td>
+          <td>16.11.2018 17:20</td>
+        </tr>
+        <tr>
+          <td>Para Yükleme</td>
+          <td>Merkez Yemekhane Kiosk4</td>
+          <td>5</td>
+          <td>6</td>
+          <td>15.11.2018 13:42</td>
+        </tr>
+      </table>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Kapat</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- #İslem Modal -->
 
 </body>
 </html>
