@@ -21,7 +21,7 @@
         <div class="row">
             <!-- Profil Picture -->
             <div class="col-md-4">
-                <img src="../../img/veli.png" class="circle-image" width="70" height="70" alt="">
+                <img src="../../img/veli.jpg" class="circle-image" width="70" height="70" alt="">
             </div>
             <!-- #Profil Picture -->
 
@@ -121,7 +121,7 @@
                   <div class="row">
                       <!-- Profil Picture -->
                       <div class="col-lg-1" >
-                          <img src="../../img/koala.jpg" height="70" width="70" class="rounded" alt="">
+                          <img src="../../img/veli.jpg" height="70" width="70" class="rounded" alt="">
                       </div>
                       <!-- #Profil Picture -->
 
@@ -153,7 +153,15 @@
                   <!-- #Shortcut and profile-info -->
               </div>
           </div>
+        </div>
+        <div class="col-md-12">
+
+          <!-- Content Header -->
           <hr>
+            <span class="h3"><i class="fa fa-info"></i> &nbsp; Ders Alma Listesi</span>
+          <hr>
+          <!-- #Content Header -->
+
           <!-- Danger Text -->
           <div class="card border-danger mb-3">
             <div class="card-body text-danger">
@@ -162,12 +170,104 @@
           </div>
           <!-- #Danger Text -->
 
+          <p class="text-center muted-text">Yazdırılabilir alan</p>
+          <hr>
+          <!-- Yazdırılacak Alan -->
+          <div class="col-md-12" id="yazdirilacakAlan">
+            <br>
+            <!-- Genel Bilgiler -->
+            <div class="row">
+
+              <div class="col-md-4">
+                <img src="../../img/htmlLogo.png" alt="Universite Logosu" height="150" width="150">
+              </div>
+
+              <div class="col-md-4">
+                <h5 class="h5 text-center">X Üniversitesi</h5>
+                <h6 class="h6 text-center">İktisadi ve İdari Bilimler Fakültesi</h6>
+                <h6 class="h6 text-center">2018-2019 Akademik Yılı Güz Dönemi</h6>
+                <h6 class="h6 text-center">Öğrenci Ders Alma Formu</h6>
+              </div>
+
+              <div class="col-md-4">
+                <p class="h6 text-center"> 09.12.2018 </p>
+              </div>
+
+            </div>
+            <!-- #Genel Bilgiler -->
+
+            <br>
+
+            <!-- Öğrenci Bilgileri -->
+            <div class="row">
+              <div class="col-md-6">
+                <strong> <span>Öğrenci No : </span> </strong> <span>123507045</span> <br>
+                <strong> <span>Öğrenci Adı : </span> </strong> <span>Joe Doe</span> <br>
+                <strong> <span>Agno Bilgileri : </span> </strong> <span> 2,89 </span>
+              </div>
+              <div class="col-md-6">
+                <strong> <span>Bölümü / Ana Bilim Dalı : </span> </strong> <span>Yönetim Bilişim Sistemleri</span> <br>
+                <strong> <span>Programı / Bilim Dalı : </span> </strong> <span>Yönetim Bilişim Sistemleri</span>
+              </div>
+            </div>
+            <!-- #Öğrenci Bilgileri -->
+            <br>
+            <!-- Ders Alma Tablosu -->
+            <table class="table table-bordered table-hover" >
+                <thead style="background:#000;color:#fff">
+                  <td>Ders Kodu</td>
+                  <td>Ders Adı</td>
+                  <td>Kredi</td>
+                  <td>Dersi Veren Öğretim Elemanı</td>
+                </thead>
+                <tr>
+                  <td>BSEÇ 429</td>
+                  <td>Bilişim Sistemleri Araştırmaları</td>
+                  <td>3</td>
+                  <td>Dr. Öğr. Üyesi Micheal</td>
+                </tr>
+
+                <tr>
+                  <td>BSEÇ 429</td>
+                  <td>Mobil Programlama</td>
+                  <td>3</td>
+                  <td>Dr. Öğr. Üyesi Kirk</td>
+                </tr>
+
+                <tr>
+                  <td>İŞL 407</td>
+                  <td>Üretim Yönetimi</td>
+                  <td>2</td>
+                  <td>Dr. Öğr. Üyesi Skirtel</td>
+                </tr>
+
+                <tr>
+                  <td>YBS 403</td>
+                  <td>Yapay Zeka</td>
+                  <td>3</td>
+                  <td>Dr. Öğr. Üyesi Stalin</td>
+                </tr>
+            </table>
+            <!-- #Ders Alma Tablosu -->
+          </div>
+          <a href="#" class="btn btn-warning" style="float:right" onclick="yazdir()">Yazdır</a>
+          <br> <br>
+          <!-- #Yazdırılacak Alan -->
+
       </div>
     </div>
 <script src="https://code.jquery.com/jquery-3.3.1.js" ></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 <script src="../../js/main.js"></script>
-
+<script type="text/javascript">
+function yazdir(){
+  var yazdirilacakAlan= document.getElementById("yazdirilacakAlan").innerHTML;
+  var orjinalSayfa= document.body.innerHTML;
+  document.body.innerHTML = yazdirilacakAlan;
+  window.print();
+  document.body.innerHTML = orjinalSayfa;
+}
+</script>
 </body>
 </html>
