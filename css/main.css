@@ -148,6 +148,7 @@ th{
 }
 .titleBtn{
   color:#fff;
+  cursor: pointer;
 }
 .titleBtn:hover{
   transition: color #000 500ms;
