@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="../../css/main.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <title>Sınavlar.</title>
+    <title>Yoklama Bilgisi.</title>
 </head>
 <body>
 <!-- Sidebar -->
@@ -70,7 +70,7 @@
         <!-- Menu Item -->
         <span class="list" onclick="$('#mesaj').toggle('medium');" ><i class="fa fa-comment"></i> &nbsp;Mesajlaşma </span>
         <div id="mesaj" style="display:none;">
-            <a href="#">Mesajlar</a>
+            <a href="mesajlar.html">Mesajlar</a>
             <a href="#">Mesaj Gonder</a>
         </div>
         <!-- #Menu Item -->
@@ -163,7 +163,7 @@
     <!-- Page Content -->
     <hr>
     <div class="col-md-12">
-      <span class="h3"><i class="fa fa-file-signature"></i> Sınavlar </span>
+      <span class="h3"><i class="fa fa-file-signature"></i> Yoklama Bilgisi </span>
     </div>
     <hr>
     <!-- #Page Content -->
@@ -171,153 +171,88 @@
     <!-- Content -->
     <div class="col-md-12">
           <div class="col-md-12">
-            <div class="col-md-12" style="margin-bottom:2%">
-                <div class="col-md-8">
-                    <div class="row">
-                        <div class="col-md-4" style="margin-right:0%">
-                            <span>Eğitim Öğretim Yılı</span>
+
+            <div class="col-md-12">
+
+      
+                  <table  class="table table-hover table-bordered " >
+                    <thead style="background-color:#111;color:#fff; border:1px solid #000">
+                      <td>Ders Adı</td>
+                      <td>Ders Kodu</td>
+                      <td>Ders Yoklama Durumu</td>
+                    </thead>
+                    <tr>
+                      <td>Bilişim Sistemleri Araştırması</td>
+                      <td>BSEÇ 429</td>
+                      <td>Henüz yoklama bilgisi girilmemiş</td>
+                    </tr>
+                    <tr>
+                      <td>Yapay Zeka</td>
+                      <td>YBS 403</td>
+                      <td>
+                        <div class="col-md-12" style="color:#fff">
+                          <div class="progress">
+                            <span class="gelmedi rounded-right bg-danger text-center w-75 h-100">%75</span>
+                          </div>
+                          <div class="progress">
+                            <span class="geldi rounded-left bg-success text-center w-25"> %25 </span>
+                          </div>
                         </div>
-                        <div class="col-md-8" style="margin-left:0%">
-                            <select class="custom-select" name="">
-                                <br>
-                                <option value="1">Yönetim Bilişim Sistemleri</option>
-                            </select>
+                      </td>
+                    </tr>
+      
+                    <tr>
+                      <td>Mesleki İngilizce 3</td>
+                      <td>YD 409</td>
+                      <td>
+                        <div class="col-md-12" style="color:#fff">
+                          <div class="progress">
+                            <span class="gelmedi rounded-right bg-danger text-center w-50 h-100">%50</span>
+                          </div>
+                          <div class="progress">
+                            <span class="geldi rounded-left bg-success text-center w-50"> %50 </span>
+                          </div>
                         </div>
-                    </div>
-                    <br>
-                    <div class="row">
-                        <div class="col-md-4" style="margin-right:0%">
-                            <span>Akademik Yıl</span>
-                        </div>
-                        <div class="col-md-8" style="margin-left:0%">
-                            <select class="custom-select" name="">
-                                <br>
-                                <option value="1">2015-2016</option>
-                                <option value="2">2016-2017</option>
-                                <option value="3">2017-2018</option>
-                            </select>
-                        </div>
-                    </div>
-                    <br>
-                    <div class="row">
-                            <div class="col-md-4" style="margin-right:0%">
-                                <span>Dönem</span>
+                      </td>
+                    </tr>
+
+                    <tr>
+                        <td>Bilişim Sistemleri Araştırmaları</td>
+                        <td>YD 409</td>
+                        <td>
+                          <div class="col-md-12" style="color:#fff">
+                            <div class="progress">
+                              <span class="gelmedi rounded-right bg-danger text-center w-25 h-100">%25</span>
                             </div>
-                            <div class="col-md-8" style="margin-left:0%">
-                                <select class="custom-select" name="">
-                                    <br>
-                                    <option value="1">Güz</option>
-                                    <option value="2">Bahar</option>
-                                </select>
+                            <div class="progress">
+                              <span class="geldi rounded-left bg-success text-center w-75"> %75 </span>
                             </div>
-                        </div>
+                          </div>
+                        </td>
+                      </tr>
+
+
+                     
+                      <tr>
+                        <td>Mesleki İngilizce 3</td>
+                        <td>YD 409</td>
+                        <td>
+                          <div class="col-md-12" style="color:#fff">
+                            <div class="progress">
+                              <span class="gelmedi rounded-right bg-danger text-center w-50 h-100">%50</span>
+                            </div>
+                            <div class="progress">
+                              <span class="geldi rounded-left bg-success text-center w-50"> %50 </span>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>                      
+
+                  </table>
                 </div>
-                 
-            </div>
-            <div class="col-md-12 mx-auto">
-                <!-- Sınav Table -->
-                <table class="table table-bordered table-hover">
-                  <thead class="text-center" bgcolor="grey">
-                    <td colspan="9">2015-2016 Eğitim Öğretim Yılı / <span style="color:#fff">Güz</span></td>
-                  </thead>
-                  <thead style="background-color:#111;color:#fff; border:1px solid #000">
-                    <td>Kodu</td>
-                    <td>Ders Adı</td>
-                    <td>Sınav Adı</td>
-                    <td>Etki Oranı</td>
-                    <td>Sınav Tarihi</td>
-                    <td>İlan Tarihi</td>
-                    <td>Sınav Tipi</td>
-                    <td>Sınav Ortalaması</td>
-                    <td>Notu</td>
-                  </thead>
-                  <!--Ders İçerik-->
-                    <tr>
-                        <td>EKO 101</td>
-                        <td>Matematik I (5070) </td>
-                        <td>Ara Sınav</td>
-                        <td>40.0</td>
-                        <td>23.11.2018</td>
-                        <td>11.12.2018</td>
-                        <td>Ara Sınav</td>
-                        <td>72.0</td>
-                        <td>69</td>
-                    </tr>
-                  <!--#Ders İçerik-->
 
-                  <!--Ders İçerik-->
-                    <tr>
-                        <td>EKO 101</td>
-                        <td>Matematik I (5070) </td>
-                        <td>Ara Sınav</td>
-                        <td>40.0</td>
-                        <td>23.11.2018</td>
-                        <td>11.12.2018</td>
-                        <td>Ara Sınav</td>
-                        <td>72.0</td>
-                        <td>69</td>
-                    </tr>
-                 <!--#Ders İçerik-->
 
-                 <!--Ders İçerik-->
-                    <tr>
-                        <td>EKO 101</td>
-                        <td>Matematik I (5070) </td>
-                        <td>Ara Sınav</td>
-                        <td>40.0</td>
-                        <td>23.11.2018</td>
-                        <td>11.12.2018</td>
-                        <td>Ara Sınav</td>
-                        <td>72.0</td>
-                        <td>69</td>
-                    </tr>
-                      <!--#Ders İçerik-->
-                    <!--Ders İçerik-->
-                    <tr>
-                            <td>EKO 101</td>
-                            <td>Matematik I (5070) </td>
-                            <td>Ara Sınav</td>
-                            <td>40.0</td>
-                            <td>23.11.2018</td>
-                            <td>11.12.2018</td>
-                            <td>Ara Sınav</td>
-                            <td>72.0</td>
-                            <td>69</td>
-                        </tr>
-                      <!--#Ders İçerik-->
-    
-                      <!--Ders İçerik-->
-                        <tr>
-                            <td>EKO 101</td>
-                            <td>Matematik I (5070) </td>
-                            <td>Ara Sınav</td>
-                            <td>40.0</td>
-                            <td>23.11.2018</td>
-                            <td>11.12.2018</td>
-                            <td>Ara Sınav</td>
-                            <td>72.0</td>
-                            <td>69</td>
-                        </tr>
-                     <!--#Ders İçerik-->
-    
-                     <!--Ders İçerik-->
-                        <tr>
-                            <td>EKO 101</td>
-                            <td>Matematik I (5070) </td>
-                            <td>Ara Sınav</td>
-                            <td>40.0</td>
-                            <td>23.11.2018</td>
-                            <td>11.12.2018</td>
-                            <td>Ara Sınav</td>
-                            <td>72.0</td>
-                            <td>69</td>
-                        </tr>
-                          <!--#Ders İçerik-->  
-                </table>
-                <!-- #Sınav Table -->
-            </div>
           </div>
-
     </div>
 
     <!-- #Content -->
