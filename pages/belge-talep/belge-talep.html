@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../../css/main.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <title>Belge Talep.</title>
+</head>
+<body>
+<!-- Sidebar -->
+<div id="mySidenav" class="sidenav">
+
+  <!-- Close Icon -->
+    <a href="javascript:void(0)"  class="closebtn" onclick="closeNav()">&times;</a>
+  <!-- #Close Icon -->
+
+  <!-- Profil Info -->
+    <div class="col-md-12 profil-info">
+      <div class="row">
+        <!-- Profil Picture -->
+          <div class="col-md-4">
+              <img src="../../img/veli.jpg" class="circle-image" width="70" height="70" alt="">
+          </div>
+        <!-- #Profil Picture -->
+
+          <!-- Mini Profil Info -->
+          <div class="col-md-8">
+              <span class="user-name"> Süleyman Sevimli </span>
+              <span class="unvan"> Öğrenci </span>
+          </div>
+          <!-- Mini Profil Info -->
+      </div>
+        <div class="col-md-7" style="float:right;margin-right:5%;">
+            <i class="fa fa-home sideNavIcon"></i>
+            <i class="fa fa-user sideNavIcon"></i>
+            <i class="fa fa-comment sideNavIcon"></i>
+            <i class="fa fa-external-link-alt sideNavIcon"></i>
+        </div>
+    </div>
+    <!-- #Profil Info -->
+
+    <!-- Menu -->
+    <div class="col-md-12 menu-items">
+
+        <!-- Menu Item -->
+        <span class="list" onclick="$('#personal').toggle('medium');"> <i class="fa fa-user"></i> &nbsp;Kişisel Bilgiler </span>
+        <div id="personal" style="display:none;">
+            <a href="../../pages/kisisel-bilgiler/kartbilgileri.html">Kart Bilgileri</a>
+            <a href="../../pages/kisisel-bilgiler/ozlukbilgileri.html">Özlük Bilgileri</a>
+            <a href="../../pages/kisisel-bilgiler/sifredegistirme.html">Şifre Değiştirme</a>
+            <a href="../../pages/kisisel-bilgiler/unikimlik.html">ATA KİMLİK</a>
+        </div>
+        <!-- #Menu Item -->
+
+        <!-- Menu Item -->
+        <span class="list" onclick="$('#ogrenim').toggle('medium');" ><i class="fa fa-school"></i> &nbsp;Öğrenim </span>
+        <div id="ogrenim" style="display:none;">
+            <a href="ders-alma.html">Ders Alma</a>
+            <a href="ders-alma-listesi.html">Ders Alma Listesi</a>
+            <a href="ders-programi.html">Ders Programı</a>
+            <a href="not-karti.html">Not Kartı</a>
+            <a href="sinav-yer-bilgisi.html">Sınav Yer Bilgisi</a>
+            <a href="sinavlar.html">Sınav Sonuçları</a>
+            <a href="devamsizlik-bilgisi.html">Yoklama Bilgisi</a>
+        </div>
+        <!-- #Menu Item -->
+
+        <!-- Menu Item -->
+        <span class="list" onclick="$('#mesaj').toggle('medium');" ><i class="fa fa-comment"></i> &nbsp;Mesajlaşma </span>
+        <div id="mesaj" style="display:none;">
+            <a href="mesajlar.html">Mesajlar</a>
+            <a href="#">Mesaj Gonder</a>
+        </div>
+        <!-- #Menu Item -->
+
+        <!-- Menu Item -->
+        <span class="list" onclick="$('#belge').toggle('medium');" ><i class="fa fa-file-alt"></i> &nbsp;Belge Talep </span>
+        <div id="belge" style="display:none;">
+            <a href="#">Belge Talep</a>
+        </div>
+        <!-- #Menu Item -->
+
+        <!-- Menu Item -->
+        <span class="list" onclick="$('#kimlik').toggle('medium');" ><i class="fa fa-id-card"></i> &nbsp;Kimlik Kartı </span>
+        <div id="kimlik" style="display:none;">
+            <a href="../kimlik-karti/kart-talep.html">Kimlik Kartı Talep</a>
+        </div>
+        <!-- #Menu Item -->
+
+        <!-- Menu Item -->
+        <span class="list" onclick="$('#mezuniyet').toggle('medium');" ><i class="fa fa-graduation-cap"></i> &nbsp;Mezuniyet İşlemleri </span>
+        <div id="mezuniyet" style="display:none;">
+            <a href="#">Mezuniyet Takip</a>
+        </div>
+        <!-- #Menu Item -->
+
+        <!-- Menu Item -->
+        <span class="list" onclick="$('#harc').toggle('medium');" ><i class="fa fa-money-bill-alt"></i> &nbsp;Harç İşlemleri </span>
+        <div id="harc" style="display:none;">
+            <a href="#">Online Harç Odeme</a>
+        </div>
+        <!-- #Menu Item -->
+
+        <!-- Menu Item -->
+        <span class="list"><i class="fa fa-sign-out-alt"></i> &nbsp;Çıkış </span>
+
+        <!-- #Menu Item -->
+
+    </div>
+    <!-- #Menu -->
+</div>
+<!-- #Sidebar -->
+
+<!-- Main Div -->
+<div id="main">
+    <!-- Open Icon -->
+    <span class="closeBtn" onclick="openNav()">&#9776;</span>
+    <!-- #Open Icon -->
+    <!-- Profil Header -->
+    <div class="col-md-12">
+        <div class="row">
+            <div class="mainDiv container-fluid">
+                <!-- Shortcut and profile-info -->
+                <div class="row">
+                    <!-- Profil Picture -->
+                    <div class="col-lg-1" >
+                        <img src="../../img/veli.jpg" height="70" width="70" class="rounded" alt="">
+                    </div>
+                    <!-- #Profil Picture -->
+
+                    <!-- User Info -->
+                    <div class="col-md-3 person-sm-info">
+                        <p class="h5"> Süleyman Sevimli </p>
+                        <p class="text-muted"> Öğrenci </p>
+                    </div>
+                    <!-- #User Info -->
+
+                    <div class="col-md-1 clear"></div>
+
+                    <!-- Online User Counter -->
+                    <div class="col-md-4" style="float:right">
+                        <div class="progress">
+                            <span class="rounded-right bg-success text-center w-100" style="color:#fff;" >11080</span>
+                        </div>
+                        <p>Kişi Online</p>
+                    </div>
+                    <!-- #Online User Counter -->
+
+                    <!-- Session Destroy -->
+                    <div class="col-md-1">
+                        <a class="btn btn-danger" href="#">Oturumu Kapat</a>
+                    </div>
+                    <!-- #Session Destroy -->
+
+                </div>
+                <!-- #Shortcut and profile-info -->
+            </div>
+        </div>
+    </div>
+    <!-- #Profil Header -->
+    <!-- Page Content -->
+    <hr>
+    <div class="col-md-12">
+      <span class="h3"><i class="fa fa-file-signature"></i> Belge Talep </span>
+    </div>
+    <hr>
+    <!-- #Page Content -->
+
+    <!-- Content -->
+    <div class="col-md-12">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <label for="programList">Program</label>
+                    <select class="custom-select" id="programList">
+                        <option selected>Listeden Seçiniz...</option>
+                        <option value="1">Yönetim Bilişim Sistemleri</option>
+                        <option value="2">Yazılım Mühendisliği</option>
+                    </select>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-md-6">
+                    <label for="programList">Belge Türü</label>
+                    <select class="custom-select" id="programList">
+                        <option selected>Listeden Seçiniz...</option>
+                        <option value="1">Öğrenci Belgesi</option>
+                        <option value="2">Transkript</option>
+                        <option value="3">Transkript (İngilizce)</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6" >
+                <button style="float:right; margin-top:3%; " class="btn btn-success">Talep Et</button>
+            </div>
+            
+        </div>
+    </div>
+    <!-- #Content -->
+  </div>
+<!-- #Main Div -->
+
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.js" ></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<script src="../../js/main.js"></script>
+
+</body>
+</html>
