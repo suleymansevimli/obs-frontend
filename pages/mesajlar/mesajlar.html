@@ -4,6 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
     <link rel="stylesheet" href="../../css/main.css">
+    <link rel="stylesheet" href="../../css/cke.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <title>Mesajlar | Gelen Kutusu.</title>
@@ -201,28 +202,38 @@
                         </div>
                         <!-- #Settings -->
                     </div>
+                    <div class="row" style="float:right; margin-right: 2%; margin-bottom: 2%">
+                        <div class="col-md-12" >
+                            <button type="button" class="btn btn-success" data-toggle="modal" data-target=".bd-example-modal-lg">
+                                Yeni Mesaj
+                            </button>
+                        </div>
+                    </div>
+
+                    
                     <div style=margin-top:2%;" class="col-md-12">
                             <table class="table table-bordered table-hover">
                                     
-                                    <thead style="background-color:#111;color:#fff; border:1px solid #000">
-                                      
-                                      <td>Ad Soyad</td>
-                                      <td>Durum</td>
-                                      <td>Tarih</td>
-                                      <td>Ayarlar</td>
-                                    </thead>
-                                    <!--Mesaj İçerik-->
-                                      <tr>
-                                          <td>joe Doe</td>
-                                          <td>Alıcı Okudu </td>
-                                          <td>01.02.2019 18:25:04.427</td>
-                                          <td><span class="badge badge-success"><i class="fa fa-inbox"></i></span> <br>
-                                               <span class="badge badge-danger"> <i class="fa fa-trash-alt"></i></span>  
-                                            </td>
-                                      </tr>
-                                    <!--#Mesaj İçerik-->
+                                <thead style="background-color:#111;color:#fff; border:1px solid #000">
+                                    
+                                    <td>Ad Soyad</td>
+                                    <td>Durum</td>
+                                    <td>Tarih</td>
+                                    <td>Ayarlar</td>
+                                </thead>
+
+                                <!--Mesaj İçerik-->
+                                    <tr>
+                                        <td>joe Doe</td>
+                                        <td>Alıcı Okudu </td>
+                                        <td>01.02.2019 18:25:04.427</td>
+                                        <td><span class="badge badge-success"><i class="fa fa-inbox"></i></span> <br>
+                                            <span class="badge badge-danger"> <i class="fa fa-trash-alt"></i></span>  
+                                        </td>
+                                    </tr>
+                                <!--#Mesaj İçerik-->
                   
-                                  <!--Mesaj İçerik-->
+                                <!--Mesaj İçerik-->
                                   <tr>
                                         <td>MR. Kirk</td>
                                         <td>Alıcı Okudu </td>
@@ -231,9 +242,9 @@
                                             <span class="badge badge-danger"> <i class="fa fa-trash-alt"></i></span>  
                                          </td>
                                     </tr>
-                                  <!--#Mesaj İçerik-->
+                                <!--#Mesaj İçerik-->
                   
-                                  <!--Mesaj İçerik-->
+                                <!--Mesaj İçerik-->
                                   <tr>
                                         <td>MR. Topatan</td>
                                         <td>Alıcı Okumadı </td>
@@ -242,7 +253,8 @@
                                             <span class="badge badge-danger"> <i class="fa fa-trash-alt"></i></span>  
                                          </td>
                                     </tr>
-                                  <!--#Mesaj İçerik-->
+                                <!--#Mesaj İçerik-->
+                                
                                 <!--Mesaj İçerik-->
                                     <tr>
                                         <td>Metin Ali Feyyaz</td>
@@ -262,11 +274,18 @@
 
                   <!-- Single Message -->
                   <div style="background-color:white" class="col-md-6 mx-auto" id="right">
-                        <div class="container">   
-                               <div class="row">
-                                  <div class="col-md-12 col-lg-12">
+                        <div class="container" >   
+                           <div class="row">
+                               <div class="col-md-12">
+                                   <button type="button" class="btn btn-outline-success" style="margin-bottom:5%;float:right"> 
+                                    <a class="text-muted" href="../mesajlar/mesajlar-liste.html">Tüm Mesajları Gör</a>
+                                </button>
+                                </div>
+                           </div>
+                               <div class="row" >
+                                  <div class="col-md-12 col-lg-12" >
                                      <div id="tracking-pre"></div>
-                                     <div id="tracking">
+                                     <div id="tracking" >
                                         <div class="tracking-list">
                                            <div class="tracking-item" style="box-shadow:0 0 0 2px #ddd">
                                               <div class="tracking-icon status-intransit">
@@ -290,11 +309,13 @@
                             </div>
                         </div>   
                         <div class="col-md-12" style="margin-right:15%;">
-                            <div class="input-group mb-3">
-                                <input type="text" class="form-control" placeholder="Mesajınızı Yazın..." aria-label="Recipient's username" aria-describedby="button-addon2">
-                                <div class="input-group-append">
-                                    <button class="btn btn-outline-success" type="button" id="button-addon2">Gönder</button>
+                            <div class="centered">
+                                <div id="editor" >
+                                    
                                 </div>
+                                <button type="button" class="btn btn-outline-success" style="float:right"> 
+                                        Gönder
+                                </button>
                             </div>
                         </div>                 
                   </div>
@@ -308,14 +329,79 @@
     <!-- #Content -->
   </div>
 <!-- #Main Div -->
+
+<!-- New Message Modal -->
+<div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalCenterTitle">Yeni Mesaj</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <!-- Modal Content -->
+                <div class="container centered"> 
+                    <div class="col-md-12">
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <label class="input-group-text" for="inputGroupSelect01">Kime Gönderilecek</label>
+                            </div>
+                            <select class="custom-select" id="inputGroupSelect01">
+                                <option selected>Listeden Seçiniz...</option>
+                                <option value="1">Joe Doe</option>
+                                <option value="2">Mr. Kirk</option>
+                                <option value="3">Mr. Green</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="col-md-12">
+                            <form>
+                                <div class="form-group">
+                                    <label for="recipient-name" class="col-form-label">Kimden:</label>
+                                    <input type="text" class="form-control" id="recipient-name" value="Joe Doe" disabled>
+                                </div>
+                                <div class="form-group">
+                                    <label for="recipient-name" class="col-form-label">Mesaj Konusu:</label>
+                                    <input type="text" class="form-control" id="recipient-name" value="" placeholder="Mesajın Konusu">
+                                </div>
+                                <div class="form-group">
+                                    <label for="message-text" class="col-form-label">Mesajınız:</label>
+                                    <textarea class="form-control" id="message-text"></textarea>
+                                </div>
+                            </form>
+                    </div>
+                </div>
+                <!-- #Modal Content -->
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Kapat</button>
+                <button type="button" class="btn btn-primary">Gönder</button>
+            </div>
+        </div>
+    </div>
+  </div>
+<!-- #New Message Modal -->
+
 <script src="https://code.jquery.com/jquery-3.3.1.js" ></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 <script src="../../js/main.js"></script>
+<script src="../../js/ckeditor.js"></script>
+
 <script>
-   function uyariVer(){
-        alert("en az bir mesaj seçin")
-    }
+	ClassicEditor
+		.create( document.querySelector( '#editor' ), {
+			// toolbar: [ 'heading', '|', 'bold', 'italic', 'link' ]
+		} )
+		.then( editor => {
+			window.editor = editor;
+		} )
+		.catch( err => {
+			console.error( err.stack );
+		} );
 </script>
 </body>
 </html>
